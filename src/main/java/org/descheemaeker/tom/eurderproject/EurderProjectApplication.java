@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EurderProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurderProjectApplication.class, args);
+		SpringApplication.run(EurderProjectApplication.class);
 	}
 
 }
