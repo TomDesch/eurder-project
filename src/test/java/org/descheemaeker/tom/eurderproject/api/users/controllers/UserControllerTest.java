@@ -5,12 +5,12 @@ import org.descheemaeker.tom.eurderproject.api.users.*;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.repositories.UserRepository;
 import org.junit.jupiter.api.*;
-import org.springframework.beans.factory.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 import static io.restassured.http.ContentType.JSON;
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.CUSTOMER;
@@ -48,8 +48,9 @@ public class UserControllerTest {
                 .build();
 
     }
+
     @Test
-    void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() { // Made possible by Shia Labeouf
+    void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() {
         User newCustomer = userBuilder
                 .withUserType(CUSTOMER)
                 .withFirstName("test1")
@@ -58,26 +59,23 @@ public class UserControllerTest {
                 .withPhoneNumber("test1")
                 .withAddress(placeWhereEverybodyLives)
                 .build();
-
-
         userRepository.addUser(newCustomer);
-        int startingSize = userRepository.getAllUsers().size();
+        int newSize = userRepository.getAllUsers().size();
 
         UserDto[] userDtos =
                 RestAssured.given()
                         .contentType(JSON)
                         .when()
                         .port(port)
-                        .put("/users")
+                        .post("/users")
                         .then()
                         .assertThat()
                         .statusCode(HttpStatus.CREATED.value())
                         .extract()
                         .as(UserDto[].class);
 
-        assertEquals(startingSize, userDtos.length);
-        //todo to dto
-        assertTrue(Arrays.asList(userDtos).contains(newCustomer));
+        assertEquals(newSize, userDtos.length);
+        assertTrue(Arrays.asList(userDtos).contains(UserMapper.USER_MAPPER.userToDto(newCustomer)));
     }
 
 }

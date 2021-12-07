@@ -19,6 +19,11 @@ public class UserBuilder {
         return new User(this);
     }
 
+    public UserBuilder withUserId(UUID userId) {
+        this.userId = userId;
+        return this;
+    }
+
     public UserBuilder withUserType(UserType userType) {
         this.userType = userType;
         return this;
@@ -49,6 +54,9 @@ public class UserBuilder {
         return this;
     }
 
+    public UUID getUserId() {
+        return userId;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -70,6 +78,7 @@ public class UserBuilder {
         return phoneNumber;
     }
 
-    public UserType getUserType() {return userType;
+    public UserType getUserType() {
+        return userType;
     }
 }

@@ -4,13 +4,13 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class User {
-    private UUID userId;
-    private String firstName;
-    private String lastName;
-    private String emailAddress;
-    private Address address;
-    private String phoneNumber;
-    private UserType userType;
+    private final UUID userId;
+    private final String firstName;
+    private final String lastName;
+    private final String emailAddress;
+    private final Address address;
+    private final String phoneNumber;
+    private final UserType userType;
 
     public User(UserBuilder userBuilder) {
         this.userId = UUID.randomUUID();
@@ -45,6 +45,11 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public UserType getUserType() {
+        return userType;
+    }
+
 
     @Override
     public boolean equals(Object o) {
