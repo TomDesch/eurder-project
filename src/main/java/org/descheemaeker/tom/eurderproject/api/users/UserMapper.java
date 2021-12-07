@@ -22,7 +22,7 @@ public enum UserMapper {
 
 
     public User dtoToUser(CreateUserDto createUserDto) {
-        return new UserBuilder()
+        return User.UserBuilder.aUser()
                 .withUserType(createUserDto.userType())
                 .withFirstName(createUserDto.firstName())
                 .withLastName(createUserDto.lastName())

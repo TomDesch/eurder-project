@@ -3,7 +3,8 @@ package org.descheemaeker.tom.eurderproject.api.users;
 import java.util.List;
 
 public enum UserType {
-    CUSTOMER;
+    CUSTOMER,
+    ADMIN;
 
     private List<String> features;
 

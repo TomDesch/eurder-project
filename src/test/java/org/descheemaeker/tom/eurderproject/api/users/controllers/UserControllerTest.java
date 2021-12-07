@@ -2,22 +2,15 @@ package org.descheemaeker.tom.eurderproject.api.users.controllers;
 
 import io.restassured.RestAssured;
 import org.descheemaeker.tom.eurderproject.api.users.Address;
-import org.descheemaeker.tom.eurderproject.api.users.User;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
-import org.descheemaeker.tom.eurderproject.services.UserService;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.descheemaeker.tom.eurderproject.api.services.UserService;
+import org.junit.jupiter.api.*;
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
-import java.util.Arrays;
-
 import static io.restassured.http.ContentType.JSON;
-import static org.descheemaeker.tom.eurderproject.api.users.UserMapper.USER_MAPPER;
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.CUSTOMER;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -68,4 +61,6 @@ public class UserControllerTest {
         assertEquals(userDto.lastName(), customerCreateDto.lastName());
         assertEquals(userDto.phoneNumber(), customerCreateDto.phoneNumber());
     }
+
+
 }

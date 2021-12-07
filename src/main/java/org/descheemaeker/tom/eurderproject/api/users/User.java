@@ -13,13 +13,14 @@ public class User {
     private final UserType userType;
 
     public User(UserBuilder userBuilder) {
+        //todo check everything not null
         this.userId = UUID.randomUUID().toString();
-        this.firstName = userBuilder.getFirstName();
-        this.lastName = userBuilder.getLastName();
-        this.emailAddress = userBuilder.getEmailAddress();
-        this.address = userBuilder.getAddress();
-        this.phoneNumber = userBuilder.getPhoneNumber();
-        this.userType = userBuilder.getUserType();
+        this.firstName = userBuilder.firstName;
+        this.lastName = userBuilder.lastName;
+        this.emailAddress = userBuilder.emailAddress;
+        this.address = userBuilder.address;
+        this.phoneNumber = userBuilder.phoneNumber;
+        this.userType = userBuilder.userType;
     }
 
     public String getUserId() {
@@ -73,5 +74,62 @@ public class User {
                 ", address=" + address +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
+    }
+
+
+    public static final class UserBuilder {
+        private String userId;
+        private String firstName;
+        private String lastName;
+        private String emailAddress;
+        private Address address;
+        private String phoneNumber;
+        private UserType userType;
+
+        private UserBuilder() {
+        }
+
+        public static UserBuilder aUser() {
+            return new UserBuilder();
+        }
+
+        public UserBuilder withUserId(String userId) {
+            this.userId = userId;
+            return this;
+        }
+
+        public UserBuilder withFirstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public UserBuilder withLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public UserBuilder withEmailAddress(String emailAddress) {
+            this.emailAddress = emailAddress;
+            return this;
+        }
+
+        public UserBuilder withAddress(Address address) {
+            this.address = address;
+            return this;
+        }
+
+        public UserBuilder withPhoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        public UserBuilder withUserType(UserType userType) {
+            this.userType = userType;
+            return this;
+        }
+
+        public User build() {
+            return new User(this);
+        }
     }
 }
