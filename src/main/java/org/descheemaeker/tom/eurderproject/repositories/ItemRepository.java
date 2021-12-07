@@ -1,6 +1,6 @@
 package org.descheemaeker.tom.eurderproject.repositories;
 
-import org.descheemaeker.tom.eurderproject.api.items.Item;
+import org.descheemaeker.tom.eurderproject.domain.Item;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -24,6 +24,4 @@ public class ItemRepository {
     public List<Item> getAllItems() {
         return new ArrayList<>(items.values());
     }
-
-
 }

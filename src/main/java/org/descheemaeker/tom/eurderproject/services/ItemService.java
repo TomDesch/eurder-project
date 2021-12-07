@@ -1,6 +1,6 @@
-package org.descheemaeker.tom.eurderproject.api.services;
+package org.descheemaeker.tom.eurderproject.services;
 
-import org.descheemaeker.tom.eurderproject.api.items.Item;
+import org.descheemaeker.tom.eurderproject.domain.Item;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.repositories.ItemRepository;
@@ -32,5 +32,4 @@ public class ItemService {
     public ItemDto addItem(CreateItemDto createItemDto) {
         return addItem(ITEM_MAPPER.dtoToItem(createItemDto));
     }
-    
 }

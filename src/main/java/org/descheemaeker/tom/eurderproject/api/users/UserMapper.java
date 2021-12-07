@@ -2,6 +2,7 @@ package org.descheemaeker.tom.eurderproject.api.users;
 
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
+import org.descheemaeker.tom.eurderproject.domain.User;
 
 public enum UserMapper {
     USER_MAPPER;

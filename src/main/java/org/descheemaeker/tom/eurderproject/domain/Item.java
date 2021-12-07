@@ -1,5 +1,6 @@
-package org.descheemaeker.tom.eurderproject.api.items;
+package org.descheemaeker.tom.eurderproject.domain;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class Item {
@@ -35,6 +36,29 @@ public class Item {
 
     public int getAmount() {
         return amount;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemId='" + itemId + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", amount=" + amount +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Item item)) return false;
+        return Objects.equals(itemId, item.itemId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(itemId);
     }
 
     public static final class ItemBuilder {

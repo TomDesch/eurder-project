@@ -1,6 +1,6 @@
 package org.descheemaeker.tom.eurderproject.repositories;
 
-import org.descheemaeker.tom.eurderproject.api.users.User;
+import org.descheemaeker.tom.eurderproject.domain.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

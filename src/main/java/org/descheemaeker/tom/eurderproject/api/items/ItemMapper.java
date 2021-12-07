@@ -2,6 +2,7 @@ package org.descheemaeker.tom.eurderproject.api.items;
 
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
+import org.descheemaeker.tom.eurderproject.domain.Item;
 
 public enum ItemMapper {
     ITEM_MAPPER;

@@ -2,7 +2,7 @@ package org.descheemaeker.tom.eurderproject.api.users;
 
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
-import org.descheemaeker.tom.eurderproject.api.services.UserService;
+import org.descheemaeker.tom.eurderproject.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

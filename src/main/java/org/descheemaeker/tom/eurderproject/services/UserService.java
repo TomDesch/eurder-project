@@ -1,6 +1,6 @@
-package org.descheemaeker.tom.eurderproject.api.services;
+package org.descheemaeker.tom.eurderproject.services;
 
-import org.descheemaeker.tom.eurderproject.api.users.User;
+import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.repositories.UserRepository;

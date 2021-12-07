@@ -1,4 +1,7 @@
-package org.descheemaeker.tom.eurderproject.api.users;
+package org.descheemaeker.tom.eurderproject.domain;
+
+import org.descheemaeker.tom.eurderproject.api.users.Address;
+import org.descheemaeker.tom.eurderproject.api.users.UserType;
 
 import java.util.Objects;
 import java.util.UUID;

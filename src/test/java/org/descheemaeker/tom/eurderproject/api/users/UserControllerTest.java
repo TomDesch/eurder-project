@@ -1,10 +1,9 @@
-package org.descheemaeker.tom.eurderproject.api.users.controllers;
+package org.descheemaeker.tom.eurderproject.api.users;
 
 import io.restassured.RestAssured;
-import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
-import org.descheemaeker.tom.eurderproject.api.services.UserService;
+import org.descheemaeker.tom.eurderproject.services.UserService;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,7 +16,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class UserControllerTest {
-
 
     @Value("${server.port}")
     private int port;
