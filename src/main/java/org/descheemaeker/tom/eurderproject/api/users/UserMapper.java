@@ -16,10 +16,18 @@ public enum UserMapper {
                 , user.getPhoneNumber());
     }
 
+    public CreateUserDto userToCreateDto(User user) {
+        return new CreateUserDto(user.getUserType()
+                , user.getFirstName()
+                , user.getLastName()
+                , user.getEmailAddress()
+                , user.getAddress()
+                , user.getPhoneNumber());
+    }
+
 
     public User dtoToUser(CreateUserDto createUserDto) {
         return new UserBuilder()
-                .withUserId(createUserDto.userId())
                 .withUserType(createUserDto.userType())
                 .withFirstName(createUserDto.firstName())
                 .withLastName(createUserDto.lastName())
