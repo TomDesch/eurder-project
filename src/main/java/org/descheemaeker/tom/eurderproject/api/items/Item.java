@@ -1,16 +1,24 @@
 package org.descheemaeker.tom.eurderproject.api.items;
 
+import java.util.UUID;
+
 public class Item {
+    private String itemId;
     private String name;
     private String description;
     private double price;
     private int amount;
 
     public Item(ItemBuilder itemBuilder) {
+        this.itemId = UUID.randomUUID().toString();
         this.name = itemBuilder.name;
         this.description = itemBuilder.description;
         this.price = itemBuilder.price;
         this.amount = itemBuilder.amount;
+    }
+
+    public String getItemId() {
+        return itemId;
     }
 
     public String getName() {
@@ -30,6 +38,7 @@ public class Item {
     }
 
     public static final class ItemBuilder {
+        private String itemId;
         private String name;
         private String description;
         private double price;
@@ -40,6 +49,11 @@ public class Item {
 
         public static ItemBuilder anItem() {
             return new ItemBuilder();
+        }
+
+        public ItemBuilder withItemId(String itemId) {
+            this.itemId = itemId;
+            return this;
         }
 
         public ItemBuilder withName(String name) {
