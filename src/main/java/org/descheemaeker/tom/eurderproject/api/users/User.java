@@ -10,14 +10,16 @@ public class User {
     private String emailAddress;
     private Address address;
     private String phoneNumber;
+    private UserType userType;
 
     public User(UserBuilder userBuilder) {
-        userId = UUID.randomUUID();
-        firstName = userBuilder.getFirstName();
-        lastName = userBuilder.getLastName();
-        emailAddress = userBuilder.getEmailAddress();
-        address = userBuilder.getAddress();
-        phoneNumber = userBuilder.getPhoneNumber();
+        this.userId = UUID.randomUUID();
+        this.firstName = userBuilder.getFirstName();
+        this.lastName = userBuilder.getLastName();
+        this.emailAddress = userBuilder.getEmailAddress();
+        this.address = userBuilder.getAddress();
+        this.phoneNumber = userBuilder.getPhoneNumber();
+        this.userType = userBuilder.getUserType();
     }
 
     public UUID getUserId() {

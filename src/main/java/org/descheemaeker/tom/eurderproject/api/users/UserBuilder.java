@@ -9,21 +9,18 @@ public class UserBuilder {
     private String emailAddress;
     private Address address;
     private String phoneNumber;
+    private UserType userType;
 
 
     public UserBuilder() {
-    }
-
-    public UserBuilder userBuilder() {
-        return new UserBuilder();
     }
 
     public User build() {
         return new User(this);
     }
 
-    public UserBuilder withUserId(UUID userId) {
-        this.userId = userId;
+    public UserBuilder withUserType(UserType userType) {
+        this.userType = userType;
         return this;
     }
 
@@ -52,9 +49,6 @@ public class UserBuilder {
         return this;
     }
 
-    public UUID getUserId() {
-        return userId;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -74,5 +68,8 @@ public class UserBuilder {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public UserType getUserType() {return userType;
     }
 }
