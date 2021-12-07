@@ -32,4 +32,8 @@ public class UserService {
     public UserDto addUser(CreateUserDto createUserDto) {
         return addUser(USER_MAPPER.dtoToUser(createUserDto));
     }
+
+    public User createUserDtoToUser(CreateUserDto createDto) {
+        return USER_MAPPER.dtoToUser(createDto);
+    }
 }

@@ -2,6 +2,7 @@ package org.descheemaeker.tom.eurderproject.api.users.controllers;
 
 import io.restassured.RestAssured;
 import org.descheemaeker.tom.eurderproject.api.users.Address;
+import org.descheemaeker.tom.eurderproject.api.users.User;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.services.UserService;
@@ -18,8 +19,7 @@ import java.util.Arrays;
 import static io.restassured.http.ContentType.JSON;
 import static org.descheemaeker.tom.eurderproject.api.users.UserMapper.USER_MAPPER;
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.CUSTOMER;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -44,11 +44,8 @@ public class UserControllerTest {
     @Test
     void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() {
         CreateUserDto customerCreateDto = new CreateUserDto(CUSTOMER, "t1", "t1", "t1", placeWhereEverybodyLives, "t1");
-        UserDto customer = USER_MAPPER.userToDto(USER_MAPPER.dtoToUser(customerCreateDto));
 
-        int newSize = userService.getAllUsers().size();
-
-        UserDto[] userDtos =
+        UserDto userDto =
                 RestAssured.given()
                         .body(customerCreateDto)
                         .accept(JSON)
@@ -60,10 +57,15 @@ public class UserControllerTest {
                         .assertThat()
                         .statusCode(HttpStatus.CREATED.value())
                         .extract()
-                        .as(UserDto[].class);
+                        .as(UserDto.class);
 
 
-        assertEquals(newSize, userDtos.length);
-        assertTrue(Arrays.asList(userDtos).contains(customer));
+        assertFalse(userDto.userId().isBlank());
+        assertEquals(userDto.userType(), customerCreateDto.userType());
+        assertEquals(userDto.address(), customerCreateDto.address());
+        assertEquals(userDto.emailAddress(), customerCreateDto.emailAddress());
+        assertEquals(userDto.firstName(), customerCreateDto.firstName());
+        assertEquals(userDto.lastName(), customerCreateDto.lastName());
+        assertEquals(userDto.phoneNumber(), customerCreateDto.phoneNumber());
     }
 }
