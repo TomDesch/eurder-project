@@ -6,18 +6,13 @@ import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 public enum UserMapper {
     USER_MAPPER;
 
-    public UserDto userToDto(User user) {
-        return new UserDto(user.getUserId()
-                , user.getUserType()
-                , user.getFirstName()
-                , user.getLastName()
-                , user.getEmailAddress()
-                , user.getAddress()
-                , user.getPhoneNumber());
+    UserMapper() {
     }
 
-    public CreateUserDto userToCreateDto(User user) {
-        return new CreateUserDto(user.getUserType()
+    public UserDto userToDto(User user) {
+        return new UserDto(
+                user.getUserId()
+                , user.getUserType()
                 , user.getFirstName()
                 , user.getLastName()
                 , user.getEmailAddress()
@@ -34,18 +29,6 @@ public enum UserMapper {
                 .withAddress(createUserDto.address())
                 .withEmailAddress(createUserDto.emailAddress())
                 .withPhoneNumber(createUserDto.phoneNumber())
-                .build();
-    }
-
-    public User dtoToUser(UserDto userDto) {
-        return new UserBuilder()
-                .withUserId(userDto.userId())
-                .withUserType(userDto.userType())
-                .withFirstName(userDto.firstName())
-                .withLastName(userDto.lastName())
-                .withAddress(userDto.address())
-                .withEmailAddress(userDto.emailAddress())
-                .withPhoneNumber(userDto.phoneNumber())
                 .build();
     }
 }

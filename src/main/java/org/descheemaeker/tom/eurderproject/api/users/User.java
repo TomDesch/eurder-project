@@ -1,10 +1,14 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
 import java.util.UUID;
 
+@Component
 public class User {
-    private final UUID userId;
+    private final String userId;
     private final String firstName;
     private final String lastName;
     private final String emailAddress;
@@ -12,8 +16,9 @@ public class User {
     private final String phoneNumber;
     private final UserType userType;
 
+    @Autowired
     public User(UserBuilder userBuilder) {
-        this.userId = UUID.randomUUID();
+        this.userId = UUID.randomUUID().toString();
         this.firstName = userBuilder.getFirstName();
         this.lastName = userBuilder.getLastName();
         this.emailAddress = userBuilder.getEmailAddress();
@@ -22,7 +27,7 @@ public class User {
         this.userType = userBuilder.getUserType();
     }
 
-    public UUID getUserId() {
+    public String getUserId() {
         return userId;
     }
 

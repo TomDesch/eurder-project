@@ -6,19 +6,18 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
 public class UserRepository {
-    private final Map<UUID, User> users = new ConcurrentHashMap<>();
+    private final Map<String, User> users = new ConcurrentHashMap<>();
 
     public User addUser(User user) {
         users.put(user.getUserId(), user);
         return user;
     }
 
-    public User getUser(UUID userId) {
+    public User getUser(String userId) {
         return users.get(userId);
     }
 

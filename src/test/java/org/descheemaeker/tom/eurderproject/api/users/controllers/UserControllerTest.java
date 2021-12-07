@@ -1,12 +1,13 @@
 package org.descheemaeker.tom.eurderproject.api.users.controllers;
 
 import io.restassured.RestAssured;
-import org.descheemaeker.tom.eurderproject.api.users.*;
+import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
-import org.descheemaeker.tom.eurderproject.repositories.UserRepository;
 import org.descheemaeker.tom.eurderproject.services.UserService;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,9 +28,7 @@ public class UserControllerTest {
 
     @Value("${server.port}")
     private int port;
-    private static final UserBuilder userBuilder = new UserBuilder();
     private final UserService userService;
-    private User customer;
     private Address placeWhereEverybodyLives;
 
     @Autowired
@@ -39,38 +38,19 @@ public class UserControllerTest {
 
     @BeforeAll
     void setUp() {
-        placeWhereEverybodyLives = new Address("Drury Lane", "1", 9000, "Far far away", "Shrek");
-
-        customer = userBuilder
-                .withUserType(CUSTOMER)
-                .withAddress(placeWhereEverybodyLives)
-                .withEmailAddress("poo")
-                .withFirstName("doo")
-                .withLastName("roo")
-                .withPhoneNumber("loo")
-                .build();
-
+        placeWhereEverybodyLives = new Address("Drury Lane", "1", "1000", "Far far away");
     }
 
     @Test
     void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() {
-        User newCustomer = userBuilder
-                .withUserType(CUSTOMER)
-                .withFirstName("test1")
-                .withLastName("test1")
-                .withEmailAddress("test1")
-                .withPhoneNumber("test1")
-                .withAddress(placeWhereEverybodyLives)
-                .build();
+        CreateUserDto customerCreateDto = new CreateUserDto(CUSTOMER, "t1", "t1", "t1", placeWhereEverybodyLives, "t1");
+        UserDto customer = USER_MAPPER.userToDto(USER_MAPPER.dtoToUser(customerCreateDto));
 
-        CreateUserDto newCustomerCreateDto = USER_MAPPER.userToCreateDto(newCustomer);
-
-        userService.addUser(newCustomerCreateDto);
         int newSize = userService.getAllUsers().size();
 
         UserDto[] userDtos =
                 RestAssured.given()
-                        .body(newCustomerCreateDto)
+                        .body(customerCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
                         .when()
@@ -82,7 +62,8 @@ public class UserControllerTest {
                         .extract()
                         .as(UserDto[].class);
 
+
         assertEquals(newSize, userDtos.length);
-        assertTrue(Arrays.asList(userDtos).contains(USER_MAPPER.userToDto(newCustomer)));
+        assertTrue(Arrays.asList(userDtos).contains(customer));
     }
 }

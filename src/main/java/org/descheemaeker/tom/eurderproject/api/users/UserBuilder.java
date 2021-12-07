@@ -1,9 +1,12 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
+import org.springframework.stereotype.Component;
+
 import java.util.UUID;
 
+@Component
 public class UserBuilder {
-    private UUID userId;
+    private String userId;
     private String firstName;
     private String lastName;
     private String emailAddress;
@@ -19,7 +22,7 @@ public class UserBuilder {
         return new User(this);
     }
 
-    public UserBuilder withUserId(UUID userId) {
+    public UserBuilder withUserId(String userId) {
         this.userId = userId;
         return this;
     }
@@ -54,7 +57,8 @@ public class UserBuilder {
         return this;
     }
 
-    public UUID getUserId() {
+    //todo how to update userId?
+    public String getUserId() {
         return userId;
     }
 
