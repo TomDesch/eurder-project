@@ -2,12 +2,11 @@ package org.descheemaeker.tom.eurderproject.api.items;
 
 import io.restassured.RestAssured;
 import org.descheemaeker.tom.eurderproject.Utility;
+import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
+import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.domain.User;
-import org.descheemaeker.tom.eurderproject.services.ItemService;
-import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
-import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.services.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -18,7 +17,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
 import static io.restassured.http.ContentType.JSON;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -26,18 +26,16 @@ class ItemControllerTest {
 
     @Value("${server.port}")
     private int port;
-    private final ItemService itemService;
     private final UserService userService;
 
     @Autowired
-    public ItemControllerTest(ItemService itemService, UserService userService) {
-        this.itemService = itemService;
+    public ItemControllerTest(UserService userService) {
         this.userService = userService;
     }
 
     @Test
     void givenRepoWithItems_whenRegisteringNewItemAsAdmin_thenDoIt() {
-        CreateItemDto itemCreateDto = new CreateItemDto("t1", "t1", 1D, 1);
+        CreateItemDto itemCreateDto = new CreateItemDto("t123", "t123", 1D, 1);
 
         ItemDto itemDto =
                 RestAssured.given()
@@ -112,14 +110,14 @@ class ItemControllerTest {
     }
 
     @Test
-    void givenRepoWithItems_whenAuthorising_thenThrowRuntimeException() {
+    void givenRepoWithItems_whenAuthorisingNoEmailExists_thenThrowRuntimeException() {
         CreateItemDto itemCreateDto = new CreateItemDto("t2", "t2", 1D, 1);
 
         String response = RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
-                .header("Authorization", Utility.generateBase64Authorization("xdsdfsdfsf", "fgsfsdf"))
+                .header("Authorization", Utility.generateBase64Authorization("thisEmailDoesNotExist", "thisPasswordNeither"))
                 .when()
                 .port(port)
                 .post("/items")
@@ -128,5 +126,37 @@ class ItemControllerTest {
                 .path("message");
 
         Assertions.assertEquals(response, "This email does not exist in our database.");
+    }
+
+
+    @Test
+    void givenRepoWithItems_whenAuthorisingWrongPassword_thenThrowRuntimeException() {
+        CreateItemDto itemCreateDto = new CreateItemDto("tj2", "tj2", 1D, 1);
+
+        // Make sure the user exists
+        String everything = "admin";
+        userService.addUser(User.UserBuilder.aUser()
+                .withUserType(UserType.CUSTOMER)
+                .withFirstName(everything)
+                .withLastName(everything)
+                .withPassword(everything)
+                .withAddress(new Address(everything, everything, everything, everything))
+                .withEmailAddress(everything)
+                .withPhoneNumber(everything)
+                .build());
+
+        String response = RestAssured.given()
+                .body(itemCreateDto)
+                .accept(JSON)
+                .contentType(JSON)
+                .header("Authorization", Utility.generateBase64Authorization(everything, "incorrectPassword"))
+                .when()
+                .port(port)
+                .post("/items")
+                .then()
+                .extract()
+                .path("message");
+
+        Assertions.assertEquals(response, "There is no account found with this username and password combination.");
     }
 }

@@ -1,9 +1,14 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
 import io.restassured.RestAssured;
+import org.descheemaeker.tom.eurderproject.Utility;
+import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
+import org.descheemaeker.tom.eurderproject.domain.User;
+import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
 import org.descheemaeker.tom.eurderproject.services.UserService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -66,5 +71,8 @@ public class UserControllerTest {
         assertEquals(userDto.password(), customerCreateDto.password());
     }
 
-
+    @Test
+    void givenRepoWithUsers_whenAddingUserWithoutAllFields_thenThrowRuntimeException() {
+        Assertions.assertThrows(RequiredFieldIsNullException.class, () -> User.UserBuilder.aUser().build());
+    }
 }
