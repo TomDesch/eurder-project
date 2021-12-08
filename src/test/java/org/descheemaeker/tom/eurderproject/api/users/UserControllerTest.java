@@ -45,7 +45,6 @@ public class UserControllerTest {
                         .body(customerCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
-                        //.header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .when()
                         .port(port)
                         .post("/users")

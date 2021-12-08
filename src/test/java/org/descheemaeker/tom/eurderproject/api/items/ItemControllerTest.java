@@ -133,23 +133,11 @@ class ItemControllerTest {
     void givenRepoWithItems_whenAuthorisingWrongPassword_thenThrowRuntimeException() {
         CreateItemDto itemCreateDto = new CreateItemDto("tj2", "tj2", 1D, 1);
 
-        // Make sure the user exists
-        String everything = "admin";
-        userService.addUser(User.UserBuilder.aUser()
-                .withUserType(UserType.CUSTOMER)
-                .withFirstName(everything)
-                .withLastName(everything)
-                .withPassword(everything)
-                .withAddress(new Address(everything, everything, everything, everything))
-                .withEmailAddress(everything)
-                .withPhoneNumber(everything)
-                .build());
-
         String response = RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
-                .header("Authorization", Utility.generateBase64Authorization(everything, "incorrectPassword"))
+                .header("Authorization", Utility.generateBase64Authorization("admin", "incorrectPassword"))
                 .when()
                 .port(port)
                 .post("/items")

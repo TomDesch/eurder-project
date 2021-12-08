@@ -23,7 +23,7 @@ public class UserService {
     }
 
     private void initiateBasicAccounts() {
-        User admin = new User.UserBuilder()
+        User admin = User.UserBuilder.aUser()
                 .withUserType(ADMIN)
                 .withEmailAddress("admin")
                 .withPassword("admin")
