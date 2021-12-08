@@ -22,8 +22,8 @@ public class ItemController {
 
     @PostMapping(consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
-    public ItemDto createMember(@RequestBody CreateItemDto createItemDto) {
+    public ItemDto createMember(@RequestBody CreateItemDto createItemDto, @RequestHeader String authorization) {
         LOGGER.info("Creating new item.");
-        return itemService.addItem(createItemDto);
+        return itemService.addItem(createItemDto, authorization);
     }
 }
