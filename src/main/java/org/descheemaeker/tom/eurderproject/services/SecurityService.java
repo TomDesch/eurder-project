@@ -38,7 +38,9 @@ public class SecurityService {
     }
 
     private void validateAccessToFeature(User user, Features feature) {
-        if (!user.isAbleTo(feature)){}
+        if (!user.isAbleTo(feature)){
+            //todo error?
+        }
             //throw new UnauthorizedException(user.getEmail() + " does not have access to " + feature.name());
     }
 }

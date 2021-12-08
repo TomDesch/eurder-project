@@ -2,9 +2,14 @@ package org.descheemaeker.tom.eurderproject.domain;
 
 import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
+import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
+import org.descheemaeker.tom.eurderproject.repositories.UserRepository;
+import org.descheemaeker.tom.eurderproject.services.UserService;
 
 import java.util.Objects;
 import java.util.UUID;
+
+import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
 public class User {
     private final String userId;
@@ -14,16 +19,42 @@ public class User {
     private final Address address;
     private final String phoneNumber;
     private final UserType userType;
+    private String password; //not safe
+    private static final boolean ADMIN_OVERRIDES = true;
 
     public User(UserBuilder userBuilder) {
-        //todo check everything not null
         this.userId = UUID.randomUUID().toString();
-        this.firstName = userBuilder.firstName;
-        this.lastName = userBuilder.lastName;
-        this.emailAddress = userBuilder.emailAddress;
-        this.address = userBuilder.address;
-        this.phoneNumber = userBuilder.phoneNumber;
-        this.userType = userBuilder.userType;
+        this.userType = checkRequiredFieldForIllegalNull(userBuilder.userType, !ADMIN_OVERRIDES);
+        this.firstName = checkRequiredFieldForIllegalNull(userBuilder.firstName, ADMIN_OVERRIDES);
+        this.lastName = checkRequiredFieldForIllegalNull(userBuilder.lastName, ADMIN_OVERRIDES);
+        this.emailAddress = checkRequiredFieldForIllegalNull(userBuilder.emailAddress, !ADMIN_OVERRIDES);
+        this.address = checkRequiredFieldForIllegalNull(userBuilder.address, ADMIN_OVERRIDES);
+        this.phoneNumber = checkRequiredFieldForIllegalNull(userBuilder.phoneNumber, ADMIN_OVERRIDES);
+        this.password = checkRequiredFieldForIllegalNull(userBuilder.password, !ADMIN_OVERRIDES);
+
+    }
+
+    public static void initiateBasicAccounts(UserService userService) {
+
+        User admin = new UserBuilder()
+                .withUserType(ADMIN)
+                .withFirstName("t")
+                .withLastName("d")
+                .withEmailAddress("def@ul.t")
+                .withPhoneNumber("123")
+                .withAddress(new Address("d", "1a", "9b", "BE"))
+                .build();
+
+        userService.addUser(admin);
+
+
+    }
+
+    private <T> T checkRequiredFieldForIllegalNull(T input, boolean adminOverrides) {
+        if (input == null && !(adminOverrides && this.userType == ADMIN)) {
+            throw new RequiredFieldIsNullException();
+        }
+        return input;
     }
 
     public String getUserId() {
@@ -54,6 +85,12 @@ public class User {
         return userType;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;}
 
     @Override
     public boolean equals(Object o) {
@@ -92,6 +129,7 @@ public class User {
         private Address address;
         private String phoneNumber;
         private UserType userType;
+        private String password;
 
         private UserBuilder() {
         }
