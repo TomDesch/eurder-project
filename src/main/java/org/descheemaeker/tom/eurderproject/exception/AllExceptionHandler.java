@@ -14,6 +14,12 @@ import static org.springframework.http.HttpStatus.*;
 public class AllExceptionHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(AllExceptionHandler.class);
 
+    //todo : split exceptions up in packages based on use cases
+    //todo : Make this class more efficient
+    //todo : What error when adding user that already exists? (email not unique)
+    //todo : What error when adding item that already exists? (item name not unique)
+
+
     @ExceptionHandler(RequiredFieldIsNullException.class)
     protected void requiredFieldIsNullException(RequiredFieldIsNullException exception, HttpServletResponse response) throws IOException {
         response.sendError(UNAUTHORIZED.value(), exception.getMessage());
