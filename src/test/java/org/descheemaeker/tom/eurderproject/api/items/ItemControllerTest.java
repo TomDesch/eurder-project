@@ -9,6 +9,7 @@ import org.descheemaeker.tom.eurderproject.services.ItemService;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.services.UserService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,24 +63,25 @@ class ItemControllerTest {
     }
 
     @Test
-    void givenRepoWithItems_whenRegisteringNewItemNoAuthentication_thenThrowError400() {
+    void givenRepoWithItems_whenRegisteringNewItemNoAuthentication_thenReturn400() {
         CreateItemDto itemCreateDto = new CreateItemDto("t2", "t2", 1D, 1);
 
         RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
-                //.header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                 .when()
                 .port(port)
                 .post("/items")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.BAD_REQUEST.value());
+                .statusCode(HttpStatus.BAD_REQUEST.value())
+                .extract()
+                .path("message");
     }
 
     @Test
-    void givenRepoWithItems_whenRegisteringNewItemAsCustomer_thenThrowError401() {
+    void givenRepoWithItems_whenRegisteringNewItemAsCustomer_thenReturn401_andThrowRuntimeException() {
         CreateItemDto itemCreateDto = new CreateItemDto("t2", "t2", 1D, 1);
 
         // Make sure the user exists 
@@ -106,4 +108,5 @@ class ItemControllerTest {
                 .assertThat()
                 .statusCode(HttpStatus.UNAUTHORIZED.value());
     }
+
 }
