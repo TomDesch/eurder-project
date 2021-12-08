@@ -7,7 +7,8 @@ import java.util.Objects;
 
 public record UserDto(String userId, UserType userType, String firstName, String lastName, String emailAddress,
                       Address address,
-                      String phoneNumber) {
+                      String phoneNumber,
+                      String password) {
 
     @Override
     public boolean equals(Object o) {

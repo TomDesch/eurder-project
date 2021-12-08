@@ -3,16 +3,12 @@ package org.descheemaeker.tom.eurderproject.domain;
 import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
-import org.descheemaeker.tom.eurderproject.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 import java.util.UUID;
 
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
-@Component
 public class User {
     private final String userId;
     private final String firstName;
@@ -24,7 +20,6 @@ public class User {
     private String password; //not safe
     private static final boolean ADMIN_OVERRIDES = true;
 
-    @Autowired
     public User(UserBuilder userBuilder) {
         this.userId = UUID.randomUUID().toString();
         this.userType = checkRequiredFieldForIllegalNull(userBuilder.userType, !ADMIN_OVERRIDES);
@@ -77,7 +72,8 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;}
+        this.password = password;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -107,8 +103,6 @@ public class User {
         return feature.isPermitted(this.userType);
     }
 
-
-    @Component
     public static final class UserBuilder {
         private String userId;
         private String firstName;

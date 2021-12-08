@@ -1,7 +1,6 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
 import io.restassured.RestAssured;
-import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.services.UserService;
@@ -35,14 +34,14 @@ public class UserControllerTest {
 
     @Test
     void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() {
-        CreateUserDto customerCreateDto = new CreateUserDto(CUSTOMER, "t1", "t1", "t1", placeWhereEverybodyLives, "t1");
+        CreateUserDto customerCreateDto = new CreateUserDto(CUSTOMER, "t1", "t1", "t1", placeWhereEverybodyLives, "t1", "1234");
 
         UserDto userDto =
                 RestAssured.given()
                         .body(customerCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
-                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
+                        //.header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .when()
                         .port(port)
                         .post("/users")

@@ -18,7 +18,8 @@ public enum UserMapper {
                 , user.getLastName()
                 , user.getEmailAddress()
                 , user.getAddress()
-                , user.getPhoneNumber());
+                , user.getPhoneNumber()
+                , user.getPassword());
     }
 
 
@@ -30,6 +31,7 @@ public enum UserMapper {
                 .withAddress(createUserDto.address())
                 .withEmailAddress(createUserDto.emailAddress())
                 .withPhoneNumber(createUserDto.phoneNumber())
+                .withPassword(createUserDto.password())
                 .build();
     }
 }
