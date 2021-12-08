@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 import static org.descheemaeker.tom.eurderproject.api.users.UserMapper.USER_MAPPER;
+import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
 @Service
 public class UserService {
@@ -18,6 +19,17 @@ public class UserService {
     @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
+        initiateBasicAccounts();
+    }
+
+    private void initiateBasicAccounts() {
+        User admin = new User.UserBuilder()
+                .withUserType(ADMIN)
+                .withEmailAddress("admin")
+                .withPassword("admin")
+                .build();
+
+        addUser(admin);
     }
 
     public List<User> getAllUsers() {

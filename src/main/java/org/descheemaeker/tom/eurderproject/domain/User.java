@@ -37,16 +37,6 @@ public class User {
 
     }
 
-    public static void initiateBasicAccounts(UserService userService) {
-        User admin = new UserBuilder()
-                .withUserType(ADMIN)
-                .withEmailAddress("admin")
-                .withPassword("admin")
-                .build();
-
-        userService.addUser(admin);
-    }
-
     private <T> T checkRequiredFieldForIllegalNull(T input, boolean adminOverrides) {
         if (input == null && !(adminOverrides && this.userType == ADMIN)) {
             throw new RequiredFieldIsNullException();
@@ -129,7 +119,7 @@ public class User {
         private UserType userType;
         private String password;
 
-        private UserBuilder() {
+        public UserBuilder() {
         }
 
         public static UserBuilder aUser() {
