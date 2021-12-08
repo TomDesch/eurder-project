@@ -75,9 +75,7 @@ class ItemControllerTest {
                 .post("/items")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.BAD_REQUEST.value())
-                .extract()
-                .path("message");
+                .statusCode(HttpStatus.BAD_REQUEST.value());
     }
 
     @Test
@@ -111,5 +109,24 @@ class ItemControllerTest {
                 .path("message");
 
         Assertions.assertEquals(response, everything + " does not have access to this feature.");
+    }
+
+    @Test
+    void givenRepoWithItems_whenAuthorising_thenThrowRuntimeException() {
+        CreateItemDto itemCreateDto = new CreateItemDto("t2", "t2", 1D, 1);
+
+        String response = RestAssured.given()
+                .body(itemCreateDto)
+                .accept(JSON)
+                .contentType(JSON)
+                .header("Authorization", Utility.generateBase64Authorization("xdsdfsdfsf", "fgsfsdf"))
+                .when()
+                .port(port)
+                .post("/items")
+                .then()
+                .extract()
+                .path("message");
+
+        Assertions.assertEquals(response, "This email does not exist in our database.");
     }
 }
