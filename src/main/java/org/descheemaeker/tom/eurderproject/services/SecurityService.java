@@ -2,6 +2,8 @@ package org.descheemaeker.tom.eurderproject.services;
 
 import org.descheemaeker.tom.eurderproject.domain.Features;
 import org.descheemaeker.tom.eurderproject.domain.User;
+import org.descheemaeker.tom.eurderproject.exception.EmailDoesNotExistException;
+import org.descheemaeker.tom.eurderproject.exception.LoginCredentialsMismatchException;
 import org.springframework.stereotype.Service;
 
 import java.util.Base64;
@@ -15,27 +17,49 @@ public class SecurityService {
     }
 
     public User validate(String authorization, Features feature) {
-        User user = validateUserName(authorization);
+        User user = validateLoginCredentials(authorization);
         validateAccessToFeature(user, feature);
         return user;
     }
 
-    private User validateUserName(String authorization) {
-        String email = getEmailAsString(authorization);
+    private User validateLoginCredentials(String authorization) {
+        String[] loginCredentials = getLoginCredentials(authorization);
+        String email = loginCredentials[0];
+        String password = loginCredentials[1];
 
-        User user = this.userService.getByEmail(email);
-
-        //todo fix nullable
-//        if (user == null)
-//            throw new UnknownUserException("No user corresponds to : " + email);
+        User user = validateEmail(email);
+        validatePassword(user, password);
 
         return user;
     }
-
-    private String getEmailAsString(String authorization) {
-        String decodeUsernamePassword = new String(Base64.getDecoder().decode(authorization.substring("Basic ".length())));
-        return decodeUsernamePassword.substring(0, decodeUsernamePassword.indexOf(":"));
+    private User validateEmail(String email) {
+        User user = this.userService.getByEmail(email);
+        if (user == null) {
+            throw new EmailDoesNotExistException();
+        }
+        return user;
     }
+
+    private void validatePassword(User user, String password) {
+        if (!user.getPassword().equals(password)) {
+            throw new LoginCredentialsMismatchException();
+        }
+    }
+
+    private String[] getLoginCredentials(String authorization) {
+        String decodedUsernamePassword = new String(Base64.getDecoder().decode(authorization.substring("Basic ".length())));
+        return new String[]{getEmailAsString(decodedUsernamePassword), getPasswordAsString(decodedUsernamePassword)};
+    }
+
+    private String getEmailAsString(String decoded) {
+        return decoded.substring(0, decoded.indexOf(":"));
+    }
+
+    private String getPasswordAsString(String decoded) {
+        return decoded.substring(decoded.indexOf(":"));
+    }
+
+
 
     private void validateAccessToFeature(User user, Features feature) {
         if (!user.isAbleTo(feature)){

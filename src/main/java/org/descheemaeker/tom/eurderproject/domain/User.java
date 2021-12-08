@@ -40,11 +40,8 @@ public class User {
     public static void initiateBasicAccounts(UserService userService) {
         User admin = new UserBuilder()
                 .withUserType(ADMIN)
-                .withFirstName("t")
-                .withLastName("d")
-                .withEmailAddress("def@ul.t")
-                .withPhoneNumber("123")
-                .withAddress(new Address("d", "1a", "9b", "BE"))
+                .withEmailAddress("admin")
+                .withPassword("admin")
                 .build();
 
         userService.addUser(admin);
