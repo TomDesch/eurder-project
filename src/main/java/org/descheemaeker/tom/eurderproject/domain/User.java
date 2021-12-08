@@ -3,14 +3,16 @@ package org.descheemaeker.tom.eurderproject.domain;
 import org.descheemaeker.tom.eurderproject.api.users.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
-import org.descheemaeker.tom.eurderproject.repositories.UserRepository;
 import org.descheemaeker.tom.eurderproject.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 import java.util.UUID;
 
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
+@Component
 public class User {
     private final String userId;
     private final String firstName;
@@ -22,6 +24,7 @@ public class User {
     private String password; //not safe
     private static final boolean ADMIN_OVERRIDES = true;
 
+    @Autowired
     public User(UserBuilder userBuilder) {
         this.userId = UUID.randomUUID().toString();
         this.userType = checkRequiredFieldForIllegalNull(userBuilder.userType, !ADMIN_OVERRIDES);
@@ -35,7 +38,6 @@ public class User {
     }
 
     public static void initiateBasicAccounts(UserService userService) {
-
         User admin = new UserBuilder()
                 .withUserType(ADMIN)
                 .withFirstName("t")
@@ -46,8 +48,6 @@ public class User {
                 .build();
 
         userService.addUser(admin);
-
-
     }
 
     private <T> T checkRequiredFieldForIllegalNull(T input, boolean adminOverrides) {
@@ -121,6 +121,7 @@ public class User {
     }
 
 
+    @Component
     public static final class UserBuilder {
         private String userId;
         private String firstName;
@@ -140,6 +141,11 @@ public class User {
 
         public UserBuilder withUserId(String userId) {
             this.userId = userId;
+            return this;
+        }
+
+        public UserBuilder withPassword(String password) {
+            this.password = password;
             return this;
         }
 
