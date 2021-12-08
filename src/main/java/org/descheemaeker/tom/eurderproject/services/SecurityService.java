@@ -17,10 +17,9 @@ public class SecurityService {
         this.userService = userService;
     }
 
-    public User validate(String authorization, Features feature) {
+    public void validate(String authorization, Features feature) {
         User user = validateLoginCredentials(authorization);
         validateAccessToFeature(user, feature);
-        return user;
     }
 
     private User validateLoginCredentials(String authorization) {
