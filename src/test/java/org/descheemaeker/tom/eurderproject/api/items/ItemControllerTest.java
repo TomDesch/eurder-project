@@ -96,7 +96,7 @@ class ItemControllerTest {
                 .withPhoneNumber(everything)
                 .build());
 
-        RestAssured.given()
+        String response = RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
@@ -106,7 +106,10 @@ class ItemControllerTest {
                 .post("/items")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.UNAUTHORIZED.value());
-    }
+                .statusCode(HttpStatus.UNAUTHORIZED.value())
+                .extract()
+                .path("message");
 
+        Assertions.assertEquals(response, everything + " does not have access to this feature.");
+    }
 }
