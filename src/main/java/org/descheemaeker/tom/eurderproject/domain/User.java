@@ -79,6 +79,10 @@ public class User {
                 '}';
     }
 
+    public boolean isAbleTo(Features feature) {
+        return feature.isPermitted(this.userType);
+    }
+
 
     public static final class UserBuilder {
         private String userId;

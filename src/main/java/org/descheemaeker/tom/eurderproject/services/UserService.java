@@ -32,4 +32,10 @@ public class UserService {
     public UserDto addUser(CreateUserDto createUserDto) {
         return addUser(USER_MAPPER.dtoToUser(createUserDto));
     }
+
+    public User getByEmail(String emailAddress) {
+        return getAllUsers().stream()
+                .filter(user -> user.getEmailAddress().equalsIgnoreCase(emailAddress))
+                .findFirst().orElse(null);
+    }
 }

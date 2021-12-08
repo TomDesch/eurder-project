@@ -1,6 +1,7 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
 import io.restassured.RestAssured;
+import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.services.UserService;
@@ -41,6 +42,7 @@ public class UserControllerTest {
                         .body(customerCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
+                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .when()
                         .port(port)
                         .post("/users")
