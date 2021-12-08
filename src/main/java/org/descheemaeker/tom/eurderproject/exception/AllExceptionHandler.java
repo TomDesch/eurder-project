@@ -31,4 +31,10 @@ public class AllExceptionHandler {
         response.sendError(FORBIDDEN.value(), exception.getMessage());
         LOGGER.error(exception.getMessage(), exception);
     }
+
+    @ExceptionHandler(NoAccessToFeatureException.class)
+    protected void noAccessToFeatureException(NoAccessToFeatureException exception, HttpServletResponse response) throws IOException {
+        response.sendError(UNAUTHORIZED.value(), exception.getMessage());
+        LOGGER.error(exception.getMessage(), exception);
+    }
 }

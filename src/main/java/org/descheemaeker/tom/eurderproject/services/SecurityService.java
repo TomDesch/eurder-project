@@ -4,6 +4,7 @@ import org.descheemaeker.tom.eurderproject.domain.Features;
 import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.exception.EmailDoesNotExistException;
 import org.descheemaeker.tom.eurderproject.exception.LoginCredentialsMismatchException;
+import org.descheemaeker.tom.eurderproject.exception.NoAccessToFeatureException;
 import org.springframework.stereotype.Service;
 
 import java.util.Base64;
@@ -32,6 +33,7 @@ public class SecurityService {
 
         return user;
     }
+
     private User validateEmail(String email) {
         User user = this.userService.getByEmail(email);
         if (user == null) {
@@ -59,12 +61,9 @@ public class SecurityService {
         return decoded.substring(decoded.indexOf(":") + 1);
     }
 
-
-
     private void validateAccessToFeature(User user, Features feature) {
-        if (!user.isAbleTo(feature)){
-            //todo error?
+        if (!user.isAbleTo(feature)) {
+            throw new NoAccessToFeatureException(user.getEmailAddress());
         }
-            //throw new UnauthorizedException(user.getEmail() + " does not have access to " + feature.name());
     }
 }
