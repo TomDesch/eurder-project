@@ -1,6 +1,7 @@
 package org.descheemaeker.tom.eurderproject.api.items;
 
 import io.restassured.RestAssured;
+import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.services.ItemService;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
@@ -36,6 +37,7 @@ class ItemControllerTest {
                         .body(itemCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
+                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .when()
                         .port(port)
                         .post("/items")

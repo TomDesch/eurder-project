@@ -1,8 +1,10 @@
 package org.descheemaeker.tom.eurderproject.api.users;
 
 import io.restassured.RestAssured;
+import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
+import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.services.UserService;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.*;
@@ -59,6 +61,7 @@ public class UserControllerTest {
         assertEquals(userDto.firstName(), customerCreateDto.firstName());
         assertEquals(userDto.lastName(), customerCreateDto.lastName());
         assertEquals(userDto.phoneNumber(), customerCreateDto.phoneNumber());
+        assertEquals(userDto.password(), customerCreateDto.password());
     }
 
 

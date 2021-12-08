@@ -56,7 +56,7 @@ public class SecurityService {
     }
 
     private String getPasswordAsString(String decoded) {
-        return decoded.substring(decoded.indexOf(":"));
+        return decoded.substring(decoded.indexOf(":") + 1);
     }
 
 
