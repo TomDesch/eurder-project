@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
-import org.descheemaeker.tom.eurderproject.api.users.Address;
+import org.descheemaeker.tom.eurderproject.domain.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.services.UserService;

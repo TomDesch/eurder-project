@@ -3,6 +3,7 @@ package org.descheemaeker.tom.eurderproject.api.users;
 import io.restassured.RestAssured;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
+import org.descheemaeker.tom.eurderproject.domain.Address;
 import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
 import org.junit.jupiter.api.Assertions;

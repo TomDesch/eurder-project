@@ -1,6 +1,6 @@
 package org.descheemaeker.tom.eurderproject.api.users.dto;
 
-import org.descheemaeker.tom.eurderproject.api.users.Address;
+import org.descheemaeker.tom.eurderproject.domain.Address;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 
 import java.util.Objects;
