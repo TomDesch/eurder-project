@@ -3,11 +3,14 @@ package org.descheemaeker.tom.eurderproject.api.items;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.domain.Item;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public enum ItemMapper {
-    ITEM_MAPPER;
+@Component
+public class ItemMapper {
 
-    ItemMapper() {
+    @Autowired
+    public ItemMapper() {
     }
 
     public ItemDto itemToDto(Item item) {
