@@ -13,8 +13,8 @@ import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 @Table(name = "USER")
 public class User {
     @Id
-    @SequenceGenerator(name = "MEMBER_SEQ", sequenceName = "member_seq", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ")
+    @SequenceGenerator(name = "USER_SEQ", sequenceName = "user_seq", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USER_SEQ")
     private String userId;
 
     @Column(name = "FIRST_NAME", nullable = false)

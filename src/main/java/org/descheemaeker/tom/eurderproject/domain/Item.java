@@ -1,15 +1,28 @@
 package org.descheemaeker.tom.eurderproject.domain;
 
+import javax.persistence.*;
 import java.util.Objects;
 import java.util.UUID;
 
+@Entity
+@Table(name = "ITEM")
 public class Item {
 
-
+    @Id
+    @SequenceGenerator(name = "ITEM_SEQ", sequenceName = "item_seq", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ITEM_SEQ")
     private String itemId;
+
+    @Column(name = "NAME", nullable = false)
     private String name;
+
+    @Column(name = "DESCRIPTION", nullable = false)
     private String description;
+
+    @Column(name = "PRICE", nullable = false)
     private double price;
+
+    @Column(name = "AMOUNT", nullable = false)
     private int amount;
 
     public Item(ItemBuilder itemBuilder) {
@@ -18,6 +31,9 @@ public class Item {
         this.description = itemBuilder.description;
         this.price = itemBuilder.price;
         this.amount = itemBuilder.amount;
+    }
+
+    public Item() {
     }
 
     public String getItemId() {
