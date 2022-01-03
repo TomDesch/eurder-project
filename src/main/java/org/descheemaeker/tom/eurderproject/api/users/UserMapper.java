@@ -3,11 +3,13 @@ package org.descheemaeker.tom.eurderproject.api.users;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public enum UserMapper {
-    USER_MAPPER;
-
-    UserMapper() {
+@Component
+public class  UserMapper {
+    @Autowired
+    public UserMapper() {
     }
 
     public UserDto userToDto(User user) {
