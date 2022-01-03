@@ -3,25 +3,29 @@ package org.descheemaeker.tom.eurderproject.repositories;
 import org.descheemaeker.tom.eurderproject.domain.Item;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+
 
 @Repository
 public class ItemRepository {
-    private final Map<String, Item> items = new ConcurrentHashMap<>();
+    @PersistenceContext
+    private EntityManager entityManager;
 
-    public Item addItem(Item item) {
-        items.put(item.getItemId(), item);
-        return item;
-    }
-
-    public Item getItem(String itemId) {
-        return items.get(itemId);
+    @Transactional
+    public void addItem(Item item) {
+        entityManager.persist(item);
     }
 
     public List<Item> getAllItems() {
-        return new ArrayList<>(items.values());
+        return entityManager.createQuery("select i from Item i", Item.class).getResultList();
     }
+
+//    public Item getItem(String itemId) {
+//        return items.get(itemId);
+//    }
+
+
 }
