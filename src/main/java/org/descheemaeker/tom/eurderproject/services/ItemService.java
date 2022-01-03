@@ -8,12 +8,14 @@ import org.descheemaeker.tom.eurderproject.repositories.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.descheemaeker.tom.eurderproject.domain.Features.ADD_NEW_ITEM;
 
 @Service
+@Transactional
 public class ItemService {
     private final ItemRepository itemRepository;
     private final SecurityService securityService;

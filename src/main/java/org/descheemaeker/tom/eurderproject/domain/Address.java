@@ -7,16 +7,16 @@ import java.util.Objects;
 
 @Embeddable
 public final class Address {
-    @Column(name = "STREET_NAME", nullable = false)
+    @Column(name = "STREET_NAME")
     private String streetName;
 
-    @Column(name = "HOUSE_NUMBER", nullable = false)
+    @Column(name = "HOUSE_NUMBER")
     private String houseNumber;
 
-    @Column(name = "POSTAL_CODE", nullable = false)
+    @Column(name = "POSTAL_CODE")
     private String postalCode;
 
-    @Column(name = "COUNTRY", nullable = false)
+    @Column(name = "COUNTRY")
     private String country;
 
     public Address(String streetName, String houseNumber, String postalCode, String country) {

@@ -1,7 +1,5 @@
 package org.descheemaeker.tom.eurderproject.domain;
 
-import org.descheemaeker.tom.eurderproject.api.users.UserType;
-
 import java.util.List;
 
 public enum Features {

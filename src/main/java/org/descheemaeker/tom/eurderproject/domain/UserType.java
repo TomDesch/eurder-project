@@ -1,4 +1,4 @@
-package org.descheemaeker.tom.eurderproject.api.users;
+package org.descheemaeker.tom.eurderproject.domain;
 
 import java.util.List;
 

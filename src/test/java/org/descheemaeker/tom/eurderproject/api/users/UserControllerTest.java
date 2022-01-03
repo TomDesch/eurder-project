@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
 import static io.restassured.http.ContentType.JSON;
-import static org.descheemaeker.tom.eurderproject.api.users.UserType.CUSTOMER;
+import static org.descheemaeker.tom.eurderproject.domain.UserType.CUSTOMER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
@@ -56,7 +56,7 @@ public class UserControllerTest {
                         .as(UserDto.class);
 
 
-        assertFalse(userDto.userId().isBlank());
+//        assertFalse(userDto.userId().isBlank());
         assertEquals(userDto.userType(), customerCreateDto.userType());
         assertEquals(userDto.address(), customerCreateDto.address());
         assertEquals(userDto.emailAddress(), customerCreateDto.emailAddress());

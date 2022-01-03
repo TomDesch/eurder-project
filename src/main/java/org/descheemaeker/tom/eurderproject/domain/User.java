@@ -1,21 +1,19 @@
 package org.descheemaeker.tom.eurderproject.domain;
 
-import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
 
 import javax.persistence.*;
 
-
 import java.util.Objects;
 import java.util.UUID;
 
-import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
+import static org.descheemaeker.tom.eurderproject.domain.UserType.ADMIN;
 
 @Entity
 @Table(name = "USERS")
 public class User {
     @Id
-    private String userId;
+    private UUID id;
 
     @Column(name = "FIRST_NAME")
     private String firstName;
@@ -42,7 +40,7 @@ public class User {
     private static final boolean ADMIN_OVERRIDES = true;
 
     public User(UserBuilder userBuilder) {
-        this.userId = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID();
         this.userType = checkRequiredFieldForIllegalNull(userBuilder.userType, !ADMIN_OVERRIDES);
         this.firstName = checkRequiredFieldForIllegalNull(userBuilder.firstName, ADMIN_OVERRIDES);
         this.lastName = checkRequiredFieldForIllegalNull(userBuilder.lastName, ADMIN_OVERRIDES);
@@ -63,8 +61,8 @@ public class User {
         return input;
     }
 
-    public String getUserId() {
-        return userId;
+    public UUID getUserId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -99,18 +97,18 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User user)) return false;
-        return Objects.equals(userId, user.userId);
+        return Objects.equals(id, user.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId);
+        return Objects.hash(id);
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
+                "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
@@ -125,7 +123,7 @@ public class User {
     }
 
     public static final class UserBuilder {
-        private String userId;
+        private String id;
         private String firstName;
         private String lastName;
         private String emailAddress;

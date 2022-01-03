@@ -7,9 +7,11 @@ import org.descheemaeker.tom.eurderproject.exception.LoginCredentialsMismatchExc
 import org.descheemaeker.tom.eurderproject.exception.NoAccessToFeatureException;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Base64;
 
 @Service
+@Transactional
 public class SecurityService {
     private final UserService userService;
 

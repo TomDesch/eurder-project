@@ -8,11 +8,13 @@ import org.descheemaeker.tom.eurderproject.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
-import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
+import static org.descheemaeker.tom.eurderproject.domain.UserType.ADMIN;
 
 @Service
+@Transactional
 public class UserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
@@ -27,6 +29,8 @@ public class UserService {
     private void initiateBasicAccounts() {
         User admin = User.UserBuilder.aUser()
                 .withUserType(ADMIN)
+                .withFirstName("non null")
+                .withLastName("non null either")
                 .withEmailAddress("admin")
                 .withPassword("admin")
                 .build();
@@ -37,6 +41,7 @@ public class UserService {
     public List<User> getAllUsers() {
         return userRepository.getAllUsers();
     }
+
 
     public UserDto addUser(User user) {
         userRepository.addUser(user);

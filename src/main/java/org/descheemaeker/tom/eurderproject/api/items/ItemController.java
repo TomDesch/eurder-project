@@ -5,6 +5,7 @@ import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.services.ItemService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,7 @@ public class ItemController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ItemController.class);
     private final ItemService itemService;
 
+    @Autowired
     public ItemController(ItemService itemService) {
         this.itemService = itemService;
     }

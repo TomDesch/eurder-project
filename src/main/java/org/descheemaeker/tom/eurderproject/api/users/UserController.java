@@ -23,7 +23,7 @@ public class UserController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     public UserDto createMember(@RequestBody CreateUserDto createUserDto) {
-        LOGGER.info("Creating new member.");
+        LOGGER.info("Creating new user.");
         return userService.addUser(createUserDto);
     }
 }

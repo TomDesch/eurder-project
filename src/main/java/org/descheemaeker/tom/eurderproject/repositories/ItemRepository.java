@@ -10,11 +10,11 @@ import java.util.List;
 
 
 @Repository
+@Transactional
 public class ItemRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Transactional
     public void addItem(Item item) {
         entityManager.persist(item);
     }

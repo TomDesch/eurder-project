@@ -9,16 +9,15 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+@Transactional
 public class UserRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Transactional
     public void addUser(User user) {
         entityManager.persist(user);
     }
-
 
     public List<User> getAllUsers() {
         return entityManager.createQuery("select u from User u", User.class)
