@@ -13,25 +13,31 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
+import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ActiveProfiles;
 
 import static io.restassured.http.ContentType.JSON;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@ActiveProfiles("test")
+@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY)
 class ItemControllerTest {
 
-    @Value("${server.port}")
+    @LocalServerPort
     private int port;
-    private final UserService userService;
 
     @Autowired
-    public ItemControllerTest(UserService userService) {
-        this.userService = userService;
-    }
+    private UserService userService;
+
 
     @Test
     void givenRepoWithItems_whenRegisteringNewItemAsAdmin_thenDoIt() {
@@ -142,6 +148,7 @@ class ItemControllerTest {
                 .port(port)
                 .post("/items")
                 .then()
+                // todo fix : .contentType(JSON)
                 .extract()
                 .path("message");
 

@@ -3295,3 +3295,1005 @@ Using generated security password: 78232816-eb04-46ac-8836-7285ecd0c64a
 2022-01-03 15:39:53.783  INFO 5604 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-03 15:39:53.790  INFO 5604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-01-03 15:39:53.808  INFO 5604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-03 15:58:10.425  INFO 21352 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 21352 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 15:58:10.469  INFO 21352 --- [main] o.d.t.e.api.items.ItemControllerTest     : No active profile set, falling back to default profiles: default
+2022-01-03 15:58:13.549  INFO 21352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 15:58:13.592  INFO 21352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2022-01-03 15:58:14.344  INFO 21352 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$16383d97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 15:58:15.998  INFO 21352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2345 (http)
+2022-01-03 15:58:16.025  INFO 21352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 15:58:16.029  INFO 21352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 15:58:16.514  INFO 21352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 15:58:16.515  INFO 21352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5110 ms
+2022-01-03 15:58:17.292  INFO 21352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-03 15:58:18.283  INFO 21352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-03 15:58:18.371  INFO 21352 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 15:58:18.372  INFO 21352 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://database-2.cuvv0osxzgmi.eu-west-3.rds.amazonaws.com:5432/ordertomd (PostgreSQL 12.7)
+2022-01-03 15:58:18.951  INFO 21352 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.260s)
+2022-01-03 15:58:19.160  INFO 21352 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "orderschema": 1
+2022-01-03 15:58:19.188  INFO 21352 --- [main] o.f.core.internal.command.DbMigrate      : Schema "orderschema" is up to date. No migration necessary.
+2022-01-03 15:58:19.512  INFO 21352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 15:58:19.670  INFO 21352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-03 15:58:20.108  INFO 21352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-03 15:58:20.542  INFO 21352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-01-03 15:58:22.073  INFO 21352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 15:58:22.104  INFO 21352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 15:58:23.033  WARN 21352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 15:58:26.292  INFO 21352 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3ca1c4fd-dbed-40cb-b846-5b4195ec7bc4
+
+2022-01-03 15:58:27.101  INFO 21352 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38276668, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c6d3ba, org.springframework.security.web.header.HeaderWriterFilter@6c4c32ff, org.springframework.security.web.csrf.CsrfFilter@36a7586f, org.springframework.security.web.authentication.logout.LogoutFilter@3bbb3c84, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27b7913, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e356ed6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e09c7a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22c14d10, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22cca101, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73f0b216, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2688b2be, org.springframework.security.web.session.SessionManagementFilter@76685ab0, org.springframework.security.web.access.ExceptionTranslationFilter@3bfead8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c5fbde4]
+2022-01-03 15:58:28.026  INFO 21352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2345 (http) with context path ''
+2022-01-03 15:58:28.054  INFO 21352 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 18.585 seconds (JVM running for 22.271)
+2022-01-03 15:58:30.900 ERROR 21352 --- [http-nio-2345-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /items
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:30.916  INFO 21352 --- [http-nio-2345-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 15:58:30.917  INFO 21352 --- [http-nio-2345-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 15:58:30.918  INFO 21352 --- [http-nio-2345-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-03 15:58:31.263 ERROR 21352 --- [http-nio-2345-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /items
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:31.440 ERROR 21352 --- [http-nio-2345-exec-3] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /items
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:31.677 ERROR 21352 --- [http-nio-2345-exec-4] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /items
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:31.867 ERROR 21352 --- [http-nio-2345-exec-5] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /items
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:31.905  INFO 21352 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest], using SpringBootContextLoader
+2022-01-03 15:58:31.907  INFO 21352 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-03 15:58:31.907  INFO 21352 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-03 15:58:32.013  INFO 21352 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.descheemaeker.tom.eurderproject.EurderProjectApplication for test class org.descheemaeker.tom.eurderproject.api.users.UserControllerTest
+2022-01-03 15:58:32.022  INFO 21352 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2022-01-03 15:58:32.024  INFO 21352 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b191676, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@75b05ec7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@31d96cd6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4e0dec0c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3dd4f91d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a65ce06, org.springframework.test.context.transaction.TransactionalTestExecutionListener@30a0a440, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@116c43d4, org.springframework.test.context.event.EventPublishingTestExecutionListener@b6a5cf5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6f1ba660, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5aac9d67, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@292d1705, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70796b21, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4263fbe8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7c9a0166, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3d4ea4cf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@655e024]
+2022-01-03 15:58:32.128 ERROR 21352 --- [http-nio-2345-exec-6] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing /users
+
+java.lang.RuntimeException: Must set 'realm' in config
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.internalBuild(KeycloakDeploymentBuilder.java:57) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.KeycloakDeploymentBuilder.build(KeycloakDeploymentBuilder.java:202) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver.resolve(KeycloakSpringBootConfigResolver.java:41) ~[keycloak-spring-boot-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.springsecurity.config.KeycloakSpringConfigResolverWrapper.resolve(KeycloakSpringConfigResolverWrapper.java:40) ~[keycloak-spring-security-adapter-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.AdapterDeploymentContext.resolveDeployment(AdapterDeploymentContext.java:89) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.preflightCors(PreAuthActionsHandler.java:100) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.PreAuthActionsHandler.handleRequest(PreAuthActionsHandler.java:75) ~[keycloak-adapter-core-13.0.1.jar:13.0.1]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:177) ~[spring-boot-container-bundle-13.0.1.jar:13.0.1]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-01-03 15:58:32.736  INFO 21352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 15:58:32.745  INFO 21352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-03 15:58:32.856  INFO 21352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-03 16:01:05.326  INFO 13888 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 13888 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:01:05.337  INFO 13888 --- [main] o.d.t.e.api.items.ItemControllerTest     : No active profile set, falling back to default profiles: default
+2022-01-03 16:01:07.913  INFO 13888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:01:07.991  INFO 13888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:01:08.859  INFO 13888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$adce4189] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:01:10.249  INFO 13888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2345 (http)
+2022-01-03 16:01:10.286  INFO 13888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:01:10.287  INFO 13888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:01:10.682  INFO 13888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:01:10.683  INFO 13888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4663 ms
+2022-01-03 16:01:11.582  INFO 13888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-03 16:01:12.732  INFO 13888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-03 16:01:12.850  INFO 13888 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:01:12.851  INFO 13888 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://database-2.cuvv0osxzgmi.eu-west-3.rds.amazonaws.com:5432/ordertomd (PostgreSQL 12.7)
+2022-01-03 16:01:13.451  INFO 13888 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.269s)
+2022-01-03 16:01:13.662  INFO 13888 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "orderschema": 1
+2022-01-03 16:01:13.690  INFO 13888 --- [main] o.f.core.internal.command.DbMigrate      : Schema "orderschema" is up to date. No migration necessary.
+2022-01-03 16:01:14.335  INFO 13888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:01:14.576  INFO 13888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-03 16:01:15.116  INFO 13888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-03 16:01:15.683  INFO 13888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-01-03 16:01:17.464  INFO 13888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:01:17.486  INFO 13888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:01:18.949  WARN 13888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:01:23.154  INFO 13888 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1cde80d7-8278-445b-a29f-9648c5d77f46
+
+2022-01-03 16:01:23.920  INFO 13888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16eca98a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dabe7c8, org.springframework.security.web.header.HeaderWriterFilter@24caa80, org.springframework.security.web.csrf.CsrfFilter@1dfd3635, org.springframework.security.web.authentication.logout.LogoutFilter@4807b2b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24347d8b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3445341, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@119f035f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a106b26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b0b7f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b4675db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@480f1311, org.springframework.security.web.session.SessionManagementFilter@6ce1cc03, org.springframework.security.web.access.ExceptionTranslationFilter@1488d1c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@554db19d]
+2022-01-03 16:01:25.117  INFO 13888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2345 (http) with context path ''
+2022-01-03 16:01:25.158  INFO 13888 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 21.156 seconds (JVM running for 25.174)
+2022-01-03 16:01:29.123  INFO 13888 --- [http-nio-2345-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:01:29.127  INFO 13888 --- [http-nio-2345-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:01:29.132  INFO 13888 --- [http-nio-2345-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-01-03 16:01:30.314  INFO 13888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest], using SpringBootContextLoader
+2022-01-03 16:01:30.316  INFO 13888 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-03 16:01:30.317  INFO 13888 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-03 16:01:30.368  INFO 13888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.descheemaeker.tom.eurderproject.EurderProjectApplication for test class org.descheemaeker.tom.eurderproject.api.users.UserControllerTest
+2022-01-03 16:01:30.376  INFO 13888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2022-01-03 16:01:30.382  INFO 13888 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44c141ce, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67dc8aa8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@642aa8ea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5de769c8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13668c8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10ecdd85, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21b05a8a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47ffce5d, org.springframework.test.context.event.EventPublishingTestExecutionListener@605a10fd, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@16acf986, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@35eb95d3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@cdf3815, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c320c8b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d23b242, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@240fe338, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5165783c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7d1f60cf]
+2022-01-03 16:01:30.715  INFO 13888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:01:30.718  INFO 13888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-03 16:01:30.750  INFO 13888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-03 16:08:02.445  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:02.548  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:04.255  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:04.281  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:04.522  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:04.818  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:05.806  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:05.835  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:05.835  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:06.110  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:06.110  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3125 ms
+2022-01-03 16:08:06.454  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e44b7347-f46f-4dcc-a830-831858edaba3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:07.024  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:07.024  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:e44b7347-f46f-4dcc-a830-831858edaba3 (H2 1.4)
+2022-01-03 16:08:07.265  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.146s)
+2022-01-03 16:08:07.289  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:07.417  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:07.428  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:07.483  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.081s)
+2022-01-03 16:08:07.798  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:07.926  INFO 10060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-03 16:08:08.236  INFO 10060 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-03 16:08:08.477  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:09.325  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:09.338  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:09.963  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:12.255  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8060ad9e-ca73-4348-9269-2cd955f70cd2
+
+2022-01-03 16:08:12.584 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:12.637  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56f569e, org.springframework.security.web.context.SecurityContextPersistenceFilter@518ed9b4, org.springframework.security.web.header.HeaderWriterFilter@64f1b2fb, org.springframework.security.web.csrf.CsrfFilter@78c91d2a, org.springframework.security.web.authentication.logout.LogoutFilter@4b6942a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6202f8bf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5e781b4f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@525c0f74, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77331437, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d71f296, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3618486e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3da12ba4, org.springframework.security.web.session.SessionManagementFilter@1503f434, org.springframework.security.web.access.ExceptionTranslationFilter@2279e7c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3368cf02]
+2022-01-03 16:08:13.267  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56760 (http) with context path ''
+2022-01-03 16:08:13.283  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 11.586 seconds (JVM running for 14.614)
+2022-01-03 16:08:13.369  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:13.438  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:13.439  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:13.829  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:13.838  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:13.898  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:13.928  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:14.151  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:14.153  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:14.153  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:14.213  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:14.213  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2022-01-03 16:08:14.398  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d8befb84-5347-4b44-84ba-5480ba5bb283;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:14.418  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:14.419  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:d8befb84-5347-4b44-84ba-5480ba5bb283 (H2 1.4)
+2022-01-03 16:08:14.433  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2022-01-03 16:08:14.453  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:14.484  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:14.490  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:14.527  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.054s)
+2022-01-03 16:08:14.622  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:14.630  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:14.700  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:14.701  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:14.972  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:16.110  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f77b33ad-3685-4271-afb8-4304a1bc56fc
+
+2022-01-03 16:08:16.242 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:16.274  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@326320bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@673a702a, org.springframework.security.web.header.HeaderWriterFilter@e38b953, org.springframework.security.web.csrf.CsrfFilter@61799152, org.springframework.security.web.authentication.logout.LogoutFilter@3ce60feb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51577fc8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@502f6f6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57573880, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@753cfae3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75c5ab79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e7c66b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d94b49d, org.springframework.security.web.session.SessionManagementFilter@4a648b35, org.springframework.security.web.access.ExceptionTranslationFilter@5c39da9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25a81f28]
+2022-01-03 16:08:16.371  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56764 (http) with context path ''
+2022-01-03 16:08:16.375  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.998 seconds (JVM running for 17.707)
+2022-01-03 16:08:17.769  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:17.808  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:17.808  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:18.135  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:18.141  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:18.199  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:18.226  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:18.392  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:18.393  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:18.394  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:18.449  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:18.450  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 637 ms
+2022-01-03 16:08:18.594  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:349c1091-9ad0-4c1a-a462-36658d30482b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:18.606  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:18.607  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:349c1091-9ad0-4c1a-a462-36658d30482b (H2 1.4)
+2022-01-03 16:08:18.617  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.004s)
+2022-01-03 16:08:18.624  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:18.652  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:18.656  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:18.682  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.038s)
+2022-01-03 16:08:18.746  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:18.756  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:18.799  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:18.800  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:19.045  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:20.146  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9e783c19-0402-440b-a982-d8d91d74b9b7
+
+2022-01-03 16:08:20.253 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:20.284  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71e740c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c9fe061, org.springframework.security.web.header.HeaderWriterFilter@515c3dd2, org.springframework.security.web.csrf.CsrfFilter@721384e0, org.springframework.security.web.authentication.logout.LogoutFilter@4df50829, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d12fa92, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@51653509, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50aa5826, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3ab87cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4988c303, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@798ac54d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a26eecb, org.springframework.security.web.session.SessionManagementFilter@245504d, org.springframework.security.web.access.ExceptionTranslationFilter@a15e4fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fb9dab6]
+2022-01-03 16:08:20.360  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56773 (http) with context path ''
+2022-01-03 16:08:20.366  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.594 seconds (JVM running for 21.698)
+2022-01-03 16:08:20.443  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:20.507  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:20.508  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:20.888  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:20.896  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:20.941  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:20.962  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:21.178  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:21.179  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:21.179  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:21.224  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:21.224  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
+2022-01-03 16:08:21.384  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:5d0b004b-5b39-4f2c-8ad1-539cbe0ce405;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:21.404  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:21.405  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:5d0b004b-5b39-4f2c-8ad1-539cbe0ce405 (H2 1.4)
+2022-01-03 16:08:21.417  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2022-01-03 16:08:21.423  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:21.444  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:21.448  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:21.474  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.035s)
+2022-01-03 16:08:21.536  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:21.548  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:21.623  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:21.624  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:21.931  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:23.038  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 21e7f77d-b622-4615-bc6d-812fb288a39e
+
+2022-01-03 16:08:23.161 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:23.215  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57064d38, org.springframework.security.web.context.SecurityContextPersistenceFilter@735d1db7, org.springframework.security.web.header.HeaderWriterFilter@302ab67e, org.springframework.security.web.csrf.CsrfFilter@5f709e71, org.springframework.security.web.authentication.logout.LogoutFilter@7856b790, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d5238b4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2153f0d7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2667a238, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55a430b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4040559d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@253c82ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a9cb9d8, org.springframework.security.web.session.SessionManagementFilter@28058dd0, org.springframework.security.web.access.ExceptionTranslationFilter@6a2b30b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3778cd05]
+2022-01-03 16:08:23.320  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56777 (http) with context path ''
+2022-01-03 16:08:23.330  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.88 seconds (JVM running for 24.661)
+2022-01-03 16:08:23.408  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:23.461  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:23.461  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:23.796  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:23.803  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:23.852  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:23.872  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:23.994  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:23.995  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:23.995  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:24.040  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:24.041  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 578 ms
+2022-01-03 16:08:24.188  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a02daa5b-db99-4f11-b43b-6e380a46dc86;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:24.198  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:24.198  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:a02daa5b-db99-4f11-b43b-6e380a46dc86 (H2 1.4)
+2022-01-03 16:08:24.206  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2022-01-03 16:08:24.211  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:24.223  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:24.227  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:24.241  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.021s)
+2022-01-03 16:08:24.300  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:24.315  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:24.360  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:24.363  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:24.541  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:25.447  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0c7db7c5-ebe2-4f36-bdce-be050c5f79ec
+
+2022-01-03 16:08:25.563 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:25.603  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31829b82, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f967ad3, org.springframework.security.web.header.HeaderWriterFilter@4bbb00a4, org.springframework.security.web.csrf.CsrfFilter@2f84848e, org.springframework.security.web.authentication.logout.LogoutFilter@58a01e47, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19a7e618, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@729f8c5d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2986e26f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22ccd80f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c1348c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f3eddc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fb74661, org.springframework.security.web.session.SessionManagementFilter@543d242e, org.springframework.security.web.access.ExceptionTranslationFilter@607c7f58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3005133e]
+2022-01-03 16:08:25.703  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56780 (http) with context path ''
+2022-01-03 16:08:25.713  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.296 seconds (JVM running for 27.045)
+2022-01-03 16:08:25.775  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:25.823  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:25.823  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:08:26.065  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:26.069  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:26.095  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:26.114  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:26.248  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:26.252  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:26.252  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:26.296  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:26.297  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 471 ms
+2022-01-03 16:08:26.438  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:7dcf5e6e-8fc6-4ff6-8561-d274061fdb7b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:26.446  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:26.446  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:7dcf5e6e-8fc6-4ff6-8561-d274061fdb7b (H2 1.4)
+2022-01-03 16:08:26.454  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.004s)
+2022-01-03 16:08:26.463  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:26.475  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:26.588  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:26.610  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.139s)
+2022-01-03 16:08:26.656  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:26.666  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:26.695  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:26.696  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:26.875  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:27.766  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 35a74f5a-3ef8-4519-bac8-d93319e94c0e
+
+2022-01-03 16:08:27.856 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:27.877  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f77cd24, org.springframework.security.web.context.SecurityContextPersistenceFilter@4db11495, org.springframework.security.web.header.HeaderWriterFilter@d866565, org.springframework.security.web.csrf.CsrfFilter@5fc444d0, org.springframework.security.web.authentication.logout.LogoutFilter@24a5df6a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70eb0c59, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@10dba2e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5408854f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@78cb15b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f83db89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51102651, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ca9c253, org.springframework.security.web.session.SessionManagementFilter@302e3484, org.springframework.security.web.access.ExceptionTranslationFilter@1f27b6fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e4aabde]
+2022-01-03 16:08:27.920  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56784 (http) with context path ''
+2022-01-03 16:08:27.932  INFO 10060 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.151 seconds (JVM running for 29.264)
+2022-01-03 16:08:27.961  INFO 10060 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest], using SpringBootContextLoader
+2022-01-03 16:08:27.963  INFO 10060 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-03 16:08:27.963  INFO 10060 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-03 16:08:27.974  INFO 10060 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.descheemaeker.tom.eurderproject.EurderProjectApplication for test class org.descheemaeker.tom.eurderproject.api.users.UserControllerTest
+2022-01-03 16:08:27.977  INFO 10060 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2022-01-03 16:08:27.981  INFO 10060 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@281e2377, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4eccb9f0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@46a2eca6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69ef3847, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3033bb96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b9b8759, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a8d8f50, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a30ab46, org.springframework.test.context.event.EventPublishingTestExecutionListener@7772549d, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3094b465, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@16454a28, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4970b93d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c43da32, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39e16443, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c97d5d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@49bc9588, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7b9c54c7]
+2022-01-03 16:08:28.018  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:28.075  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : Starting UserControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:28.078  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : The following profiles are active: test
+2022-01-03 16:08:28.390  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:28.396  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:28.442  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:28.462  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:28.634  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:28.635  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:28.636  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:28.677  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:28.678  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2022-01-03 16:08:28.815  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6af494db-6aa4-42be-b456-62fb492207c7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:28.825  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:28.825  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:6af494db-6aa4-42be-b456-62fb492207c7 (H2 1.4)
+2022-01-03 16:08:28.831  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
+2022-01-03 16:08:28.833  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:28.842  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:28.845  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:28.857  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.018s)
+2022-01-03 16:08:28.917  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:28.924  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:28.973  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:28.974  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:29.153  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:30.050  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a5e4c9a-79b2-4d6e-89af-82e19bdc3398
+
+2022-01-03 16:08:30.115 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:30.133  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@784bea2c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bc2cb11, org.springframework.security.web.header.HeaderWriterFilter@58d8e971, org.springframework.security.web.csrf.CsrfFilter@7408c08, org.springframework.security.web.authentication.logout.LogoutFilter@6ff08304, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@627ceaf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b7708d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73852c7c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f738b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@452d9887, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5aa16232, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b6fc615, org.springframework.security.web.session.SessionManagementFilter@48e13ec9, org.springframework.security.web.access.ExceptionTranslationFilter@767f03c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36e7a455]
+2022-01-03 16:08:30.195  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56787 (http) with context path ''
+2022-01-03 16:08:30.198  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : Started UserControllerTest in 2.176 seconds (JVM running for 31.529)
+2022-01-03 16:08:30.230  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:30.265  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : Starting UserControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 10060 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:08:30.265  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : The following profiles are active: test
+2022-01-03 16:08:30.495  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:08:30.503  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:08:30.545  INFO 10060 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:08:30.568  INFO 10060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$b477d353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:08:30.693  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:08:30.694  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:08:30.695  INFO 10060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:08:30.738  INFO 10060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:08:30.738  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 471 ms
+2022-01-03 16:08:30.873  INFO 10060 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a28aeb4d-3624-43fe-9dfa-985d246cecd4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:08:30.885  INFO 10060 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:08:30.886  INFO 10060 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:a28aeb4d-3624-43fe-9dfa-985d246cecd4 (H2 1.4)
+2022-01-03 16:08:30.892  INFO 10060 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2022-01-03 16:08:30.896  INFO 10060 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:08:30.909  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:08:30.912  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:08:30.921  INFO 10060 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.018s)
+2022-01-03 16:08:30.968  INFO 10060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:08:30.986  INFO 10060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:08:31.034  INFO 10060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:08:31.037  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:08:31.202  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:08:31.880  INFO 10060 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4dd2a985-3657-4781-81c3-365b4cbb154c
+
+2022-01-03 16:08:31.947 DEBUG 10060 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:08:31.962  INFO 10060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fde13d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c09f8c5, org.springframework.security.web.header.HeaderWriterFilter@3e063a21, org.springframework.security.web.csrf.CsrfFilter@500039b3, org.springframework.security.web.authentication.logout.LogoutFilter@2d8b8469, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a4ba507, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1205d422, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e343477, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34c83eb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cc20796, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@131af11d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1940cb2b, org.springframework.security.web.session.SessionManagementFilter@2d158175, org.springframework.security.web.access.ExceptionTranslationFilter@7cb39309, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bc15d49]
+2022-01-03 16:08:32.017  INFO 10060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56789 (http) with context path ''
+2022-01-03 16:08:32.021  INFO 10060 --- [main] o.d.t.e.api.users.UserControllerTest     : Started UserControllerTest in 1.787 seconds (JVM running for 33.353)
+2022-01-03 16:08:32.092  INFO 10060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:09:45.486  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:09:45.488  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:09:46.943  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:09:47.015  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:09:47.291  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:09:47.536  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:09:48.332  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:09:48.353  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:09:48.354  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:09:48.572  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:09:48.572  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2666 ms
+2022-01-03 16:09:48.940  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:8798a59b-49f4-45f6-aaf9-4439a6779017;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:09:49.367  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:09:49.367  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:8798a59b-49f4-45f6-aaf9-4439a6779017 (H2 1.4)
+2022-01-03 16:09:49.484  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.041s)
+2022-01-03 16:09:49.504  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:09:49.584  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:09:49.597  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:09:49.638  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.066s)
+2022-01-03 16:09:49.976  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:09:50.070  INFO 6496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-03 16:09:50.306  INFO 6496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-03 16:09:50.534  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:09:51.373  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:09:51.384  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:09:52.047  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:09:54.369  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 08b7a343-023c-498a-914d-03c93b5d7a12
+
+2022-01-03 16:09:54.693 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:09:54.737  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb4f09d, org.springframework.security.web.context.SecurityContextPersistenceFilter@d082916, org.springframework.security.web.header.HeaderWriterFilter@6a7b4ff5, org.springframework.security.web.csrf.CsrfFilter@6a887649, org.springframework.security.web.authentication.logout.LogoutFilter@125c03d3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4545cfc0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d970881, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@ee7a538, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31887330, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f39b3ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f51d1cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c045627, org.springframework.security.web.session.SessionManagementFilter@513ddf5f, org.springframework.security.web.access.ExceptionTranslationFilter@77feca04, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65fa1cd]
+2022-01-03 16:09:55.256  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56857 (http) with context path ''
+2022-01-03 16:09:55.276  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 10.377 seconds (JVM running for 12.444)
+2022-01-03 16:09:55.346  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:09:55.410  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:09:55.411  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:09:55.779  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:09:55.788  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:09:55.845  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:09:55.869  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:09:56.043  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:09:56.044  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:09:56.044  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:09:56.092  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:09:56.092  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2022-01-03 16:09:56.250  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:11c57267-36b2-4088-a2a5-2a51b13e4029;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:09:56.266  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:09:56.266  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:11c57267-36b2-4088-a2a5-2a51b13e4029 (H2 1.4)
+2022-01-03 16:09:56.281  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2022-01-03 16:09:56.290  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:09:56.314  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:09:56.318  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:09:56.345  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.038s)
+2022-01-03 16:09:56.411  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:09:56.417  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:09:56.460  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:09:56.460  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:09:56.734  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:09:57.840  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 88fece20-8491-4620-8806-8b1bd711feda
+
+2022-01-03 16:09:57.949 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:09:57.977  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d364bce, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d056418, org.springframework.security.web.header.HeaderWriterFilter@a422390, org.springframework.security.web.csrf.CsrfFilter@5317a7ef, org.springframework.security.web.authentication.logout.LogoutFilter@2a5917f6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72769bf5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@221ef0f0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1aa7d66e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a63de07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@769d0ef2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d58ed12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cc85ffc, org.springframework.security.web.session.SessionManagementFilter@53c39950, org.springframework.security.web.access.ExceptionTranslationFilter@6fa48ee4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68d1f4e2]
+2022-01-03 16:09:58.067  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56864 (http) with context path ''
+2022-01-03 16:09:58.073  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.718 seconds (JVM running for 15.24)
+2022-01-03 16:10:00.030  INFO 6496 --- [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:00.031  INFO 6496 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:00.033  INFO 6496 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-03 16:10:00.054 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:10:00.065 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:00.131 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56864/items
+2022-01-03 16:10:00.131 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:00.132 DEBUG 6496 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:00.134 DEBUG 6496 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:00.135 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:00.141 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:00.142 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:00.146 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:00.152 DEBUG 6496 --- [http-nio-auto-2-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:00.154 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@2df6b96c, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:00.158 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@da006b9, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@da006b9, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@da006b9, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:00.159 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@4adb2b87
+2022-01-03 16:10:00.159 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:00.159 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@3e73eb96
+2022-01-03 16:10:00.159 DEBUG 6496 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:00.159 DEBUG 6496 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:00.160 DEBUG 6496 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:00.341  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:00.385  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:00.386  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:10:00.693  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:00.700  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:00.745  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:00.766  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:00.931  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:00.933  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:00.934  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:00.990  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:00.990  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2022-01-03 16:10:01.130  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:dcadbf0d-799c-4425-a683-67746060e1ca;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:01.143  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:01.143  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:dcadbf0d-799c-4425-a683-67746060e1ca (H2 1.4)
+2022-01-03 16:10:01.156  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.007s)
+2022-01-03 16:10:01.162  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:01.183  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:01.293  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:01.312  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.134s)
+2022-01-03 16:10:01.367  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:01.378  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:01.425  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:01.426  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:01.649  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:02.650  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6952f817-1cfe-4cd6-a821-6567960ad7d7
+
+2022-01-03 16:10:02.757 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:02.784  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78c0fad6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ac93b87, org.springframework.security.web.header.HeaderWriterFilter@3593e8dd, org.springframework.security.web.csrf.CsrfFilter@3b4e0786, org.springframework.security.web.authentication.logout.LogoutFilter@7c057419, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e324000, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@fe739e7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c42dc9f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b51fc45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71af3c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2de526f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70bca957, org.springframework.security.web.session.SessionManagementFilter@21707a18, org.springframework.security.web.access.ExceptionTranslationFilter@66e17bf2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c3f0f2e]
+2022-01-03 16:10:02.846  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56869 (http) with context path ''
+2022-01-03 16:10:02.850  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.505 seconds (JVM running for 20.018)
+2022-01-03 16:10:02.885  INFO 6496 --- [http-nio-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:02.886  INFO 6496 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:02.889  INFO 6496 --- [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-03 16:10:02.890 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:10:02.891 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:02.892 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56869/items
+2022-01-03 16:10:03.016 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:03.017 DEBUG 6496 --- [http-nio-auto-3-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:03.017 DEBUG 6496 --- [http-nio-auto-3-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:03.017 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:03.018 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:03.018 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:03.018 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:03.019 DEBUG 6496 --- [http-nio-auto-3-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:03.020 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@1fdb4db7, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:03.020 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@111ca03c, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@111ca03c, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@111ca03c, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@9e2946
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@152326c7
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:03.021 DEBUG 6496 --- [http-nio-auto-3-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:03.106  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:03.160  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:03.160  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:10:03.422  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:03.428  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:03.473  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:03.490  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:03.613  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:03.614  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:03.614  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:03.657  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:03.658  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+2022-01-03 16:10:03.815  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e4a7c53f-a3fc-49f6-b53f-a7c2b054f1f5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:03.824  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:03.824  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:e4a7c53f-a3fc-49f6-b53f-a7c2b054f1f5 (H2 1.4)
+2022-01-03 16:10:03.833  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.005s)
+2022-01-03 16:10:03.838  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:03.849  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:03.852  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:03.867  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.020s)
+2022-01-03 16:10:03.925  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:03.932  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:03.985  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:03.985  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:04.154  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:05.099  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b581cc31-c00a-40ca-a348-6a8fb0ccb7e7
+
+2022-01-03 16:10:05.199 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:05.225  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58030528, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c12e25d, org.springframework.security.web.header.HeaderWriterFilter@189d8bef, org.springframework.security.web.csrf.CsrfFilter@78fdc1bb, org.springframework.security.web.authentication.logout.LogoutFilter@48715ab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e76aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5e077a32, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@c39ebcf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35cf5d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@503a3c11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@240c170a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ff167c4, org.springframework.security.web.session.SessionManagementFilter@5af410a1, org.springframework.security.web.access.ExceptionTranslationFilter@74ed1b3d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fb57b7c]
+2022-01-03 16:10:05.298  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56874 (http) with context path ''
+2022-01-03 16:10:05.303  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.191 seconds (JVM running for 22.47)
+2022-01-03 16:10:05.344  INFO 6496 --- [http-nio-auto-4-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:05.344  INFO 6496 --- [http-nio-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:05.345  INFO 6496 --- [http-nio-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-03 16:10:05.346 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:10:05.347 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:05.348 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56874/items
+2022-01-03 16:10:05.348 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:05.349 DEBUG 6496 --- [http-nio-auto-4-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:05.349 DEBUG 6496 --- [http-nio-auto-4-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:05.349 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:05.350 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:05.350 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:05.351 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:05.352 DEBUG 6496 --- [http-nio-auto-4-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:05.353 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3cbf50c9, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:05.354 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3278a92e, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3278a92e, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3278a92e, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:05.355 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@7c089fbc
+2022-01-03 16:10:05.355 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:05.355 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@36473bb9
+2022-01-03 16:10:05.355 DEBUG 6496 --- [http-nio-auto-4-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:05.356 DEBUG 6496 --- [http-nio-auto-4-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:05.356 DEBUG 6496 --- [http-nio-auto-4-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:05.403  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:05.453  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:05.454  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:10:05.706  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:05.712  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:05.743  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:05.761  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:05.909  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:06.016  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:06.016  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:06.053  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:06.054  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
+2022-01-03 16:10:06.156  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2b8e11a3-a88a-4ba0-a35e-22abd8d349a7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:06.166  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:06.166  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:2b8e11a3-a88a-4ba0-a35e-22abd8d349a7 (H2 1.4)
+2022-01-03 16:10:06.175  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.005s)
+2022-01-03 16:10:06.182  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:06.195  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:06.197  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:06.213  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.020s)
+2022-01-03 16:10:06.263  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:06.270  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:06.303  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:06.304  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:06.494  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:07.221  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 585b931d-2878-4ee8-a86d-6f499735dd4c
+
+2022-01-03 16:10:07.308 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:07.334  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33c28f0d, org.springframework.security.web.context.SecurityContextPersistenceFilter@39b704f7, org.springframework.security.web.header.HeaderWriterFilter@8be5379, org.springframework.security.web.csrf.CsrfFilter@3d4d2e29, org.springframework.security.web.authentication.logout.LogoutFilter@24cc60ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bf00a6f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4fa62aed, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2429a26f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5da1d91, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a9170c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5876bdbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f9167f7, org.springframework.security.web.session.SessionManagementFilter@6ddf4303, org.springframework.security.web.access.ExceptionTranslationFilter@400b61cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6822fdd]
+2022-01-03 16:10:07.544  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56878 (http) with context path ''
+2022-01-03 16:10:07.547  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.139 seconds (JVM running for 24.715)
+2022-01-03 16:10:07.576  INFO 6496 --- [http-nio-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:07.576  INFO 6496 --- [http-nio-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:07.577  INFO 6496 --- [http-nio-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-03 16:10:07.577 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:10:07.578 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:07.578 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56878/items
+2022-01-03 16:10:07.578 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:07.578 DEBUG 6496 --- [http-nio-auto-5-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:07.579 DEBUG 6496 --- [http-nio-auto-5-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:07.579 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:07.579 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:07.579 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:07.579 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:07.580 DEBUG 6496 --- [http-nio-auto-5-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:07.580 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@61924d9a, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:07.581 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@6f55afd8, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@6f55afd8, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@6f55afd8, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:07.581 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@9a168bc
+2022-01-03 16:10:07.581 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:07.581 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@6b6a26ea
+2022-01-03 16:10:07.581 DEBUG 6496 --- [http-nio-auto-5-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:07.582 DEBUG 6496 --- [http-nio-auto-5-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:07.582 DEBUG 6496 --- [http-nio-auto-5-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:07.619  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:07.656  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:07.656  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:10:07.908  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:07.915  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:07.948  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:07.964  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:08.078  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:08.079  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:08.079  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:08.114  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:08.114  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
+2022-01-03 16:10:08.254  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:867709be-77b9-484d-9b97-b68bcc7d66a2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:08.266  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:08.266  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:867709be-77b9-484d-9b97-b68bcc7d66a2 (H2 1.4)
+2022-01-03 16:10:08.274  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.004s)
+2022-01-03 16:10:08.277  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:08.432  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:08.436  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:08.446  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.018s)
+2022-01-03 16:10:08.490  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:08.495  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:08.525  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:08.525  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:08.683  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:09.380  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9025784d-30cf-44d9-bb94-eb22ca43b4fb
+
+2022-01-03 16:10:09.466 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:09.489  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c5a9ddc, org.springframework.security.web.context.SecurityContextPersistenceFilter@13a590f3, org.springframework.security.web.header.HeaderWriterFilter@50f77992, org.springframework.security.web.csrf.CsrfFilter@44ef04ac, org.springframework.security.web.authentication.logout.LogoutFilter@7d432f4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d31918a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1fa81c78, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@b61c70e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4981dd9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4243ed1b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29932728, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a2daa29, org.springframework.security.web.session.SessionManagementFilter@2f533bd1, org.springframework.security.web.access.ExceptionTranslationFilter@5e71e8d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f070f66]
+2022-01-03 16:10:09.550  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56883 (http) with context path ''
+2022-01-03 16:10:09.558  INFO 6496 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 1.935 seconds (JVM running for 26.726)
+2022-01-03 16:10:09.598  INFO 6496 --- [http-nio-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:09.598  INFO 6496 --- [http-nio-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:09.601  INFO 6496 --- [http-nio-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-01-03 16:10:09.603 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:10:09.605 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:09.606 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56883/items
+2022-01-03 16:10:09.606 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:09.606 DEBUG 6496 --- [http-nio-auto-6-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:09.606 DEBUG 6496 --- [http-nio-auto-6-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:09.606 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:09.607 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:09.607 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:09.607 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:09.608 DEBUG 6496 --- [http-nio-auto-6-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:09.609 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@9e2a41, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:09.609 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@e59d422, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@e59d422, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@e59d422, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:09.609 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@8e39ba9
+2022-01-03 16:10:09.609 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:09.610 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@a664131
+2022-01-03 16:10:09.610 DEBUG 6496 --- [http-nio-auto-6-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:09.610 DEBUG 6496 --- [http-nio-auto-6-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:09.610 DEBUG 6496 --- [http-nio-auto-6-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:09.634  INFO 6496 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest], using SpringBootContextLoader
+2022-01-03 16:10:09.636  INFO 6496 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-03 16:10:09.636  INFO 6496 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.descheemaeker.tom.eurderproject.api.users.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-03 16:10:09.646  INFO 6496 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.descheemaeker.tom.eurderproject.EurderProjectApplication for test class org.descheemaeker.tom.eurderproject.api.users.UserControllerTest
+2022-01-03 16:10:09.648  INFO 6496 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2022-01-03 16:10:09.650  INFO 6496 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7454f141, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17699e35, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5edf9eb1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2ce1d507, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7fece723, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24af46dd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a76eef, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@244cdad1, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c81f484, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@62c6c467, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5fab1ec6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d73ddb0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2e652f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a543319, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7d0e5fbb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7e1383f7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@790bcc24]
+2022-01-03 16:10:09.687  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:09.735  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : Starting UserControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:09.735  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : The following profiles are active: test
+2022-01-03 16:10:10.041  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:10.046  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:10.080  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:10.098  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:10.239  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:10.240  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:10.241  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:10.284  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:10.284  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
+2022-01-03 16:10:10.421  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6f274a82-fde9-4b87-a994-ffed697f1fa4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:10.429  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:10.430  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:6f274a82-fde9-4b87-a994-ffed697f1fa4 (H2 1.4)
+2022-01-03 16:10:10.435  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2022-01-03 16:10:10.440  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:10.447  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:10.450  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:10.462  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.016s)
+2022-01-03 16:10:10.500  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:10.509  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:10.545  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:10.545  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:10.705  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:11.432  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 61f4b0b3-df3a-4fad-bcde-724fa750c261
+
+2022-01-03 16:10:11.526 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:11.547  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e5616f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@17556c0a, org.springframework.security.web.header.HeaderWriterFilter@726d34de, org.springframework.security.web.csrf.CsrfFilter@542abb34, org.springframework.security.web.authentication.logout.LogoutFilter@5766f830, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a1c87e6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@69d142f6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e71c196, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10a8bfac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58bb50f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43eb44f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20bc4c09, org.springframework.security.web.session.SessionManagementFilter@162796e1, org.springframework.security.web.access.ExceptionTranslationFilter@6592f06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5aa943c5]
+2022-01-03 16:10:11.608  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56886 (http) with context path ''
+2022-01-03 16:10:11.611  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : Started UserControllerTest in 1.919 seconds (JVM running for 28.78)
+2022-01-03 16:10:11.656  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:11.711  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : Starting UserControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 6496 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:10:11.711  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : The following profiles are active: test
+2022-01-03 16:10:11.939  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:10:11.946  INFO 6496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:10:12.003  INFO 6496 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:10:12.018  INFO 6496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$754edd88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:10:12.171  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:10:12.172  INFO 6496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:10:12.173  INFO 6496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:10:12.215  INFO 6496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:10:12.216  INFO 6496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 502 ms
+2022-01-03 16:10:12.334  INFO 6496 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:024515ce-b6c8-44f6-a284-83b78442af71;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:10:12.345  INFO 6496 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:10:12.345  INFO 6496 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:024515ce-b6c8-44f6-a284-83b78442af71 (H2 1.4)
+2022-01-03 16:10:12.351  INFO 6496 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2022-01-03 16:10:12.354  INFO 6496 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:10:12.363  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:10:12.366  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:10:12.382  INFO 6496 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.022s)
+2022-01-03 16:10:12.441  INFO 6496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:10:12.449  INFO 6496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:10:12.488  INFO 6496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:10:12.489  INFO 6496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:10:12.648  WARN 6496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:10:13.253  INFO 6496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 567b9913-e058-48db-bdb1-fbb53c32fdcf
+
+2022-01-03 16:10:13.310 DEBUG 6496 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:10:13.326  INFO 6496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ca49d7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@edb28f6, org.springframework.security.web.header.HeaderWriterFilter@642f1d22, org.springframework.security.web.csrf.CsrfFilter@1f17fe4c, org.springframework.security.web.authentication.logout.LogoutFilter@797ed02e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c9ebdb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@50c253b6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f49a165, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@620a2725, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10eddc8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cb715b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20110864, org.springframework.security.web.session.SessionManagementFilter@2e1e46e7, org.springframework.security.web.access.ExceptionTranslationFilter@260715eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d97c12c]
+2022-01-03 16:10:13.375  INFO 6496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56889 (http) with context path ''
+2022-01-03 16:10:13.378  INFO 6496 --- [main] o.d.t.e.api.users.UserControllerTest     : Started UserControllerTest in 1.716 seconds (JVM running for 30.546)
+2022-01-03 16:10:13.408  INFO 6496 --- [http-nio-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:10:13.408  INFO 6496 --- [http-nio-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:10:13.409  INFO 6496 --- [http-nio-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-03 16:10:13.409 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /users
+2022-01-03 16:10:13.409 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:13.410 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:56889/users
+2022-01-03 16:10:13.410 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:10:13.410 DEBUG 6496 --- [http-nio-auto-8-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:13.410 DEBUG 6496 --- [http-nio-auto-8-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:13.410 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@12b26a0, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:10:13.411 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@fecc8f5, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@fecc8f5, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@fecc8f5, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@35e4cf0c
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@bd34dd0
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:10:13.412 DEBUG 6496 --- [http-nio-auto-8-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:10:13.447  INFO 6496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:13:02.896  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 12516 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:13:02.899  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:13:04.293  INFO 12516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:13:04.324  INFO 12516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:13:04.594  INFO 12516 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:13:04.853  INFO 12516 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$af9b9d06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:13:05.622  INFO 12516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:13:05.643  INFO 12516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:13:05.644  INFO 12516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:13:05.867  INFO 12516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:13:05.868  INFO 12516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2602 ms
+2022-01-03 16:13:06.153  INFO 12516 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:7f0f6f97-90be-466f-b12b-b73b88969970;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:13:06.626  INFO 12516 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:13:06.627  INFO 12516 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:7f0f6f97-90be-466f-b12b-b73b88969970 (H2 1.4)
+2022-01-03 16:13:06.753  INFO 12516 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.040s)
+2022-01-03 16:13:06.775  INFO 12516 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:13:06.866  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:13:06.879  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:13:06.923  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.068s)
+2022-01-03 16:13:07.188  INFO 12516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:13:07.316  INFO 12516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-03 16:13:07.609  INFO 12516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-03 16:13:07.885  INFO 12516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:13:08.666  INFO 12516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:13:08.678  INFO 12516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:13:09.410  WARN 12516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:13:11.983  INFO 12516 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5c486289-3520-4a7d-bcf2-f8c8715adbc5
+
+2022-01-03 16:13:12.286 DEBUG 12516 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:13:12.340  INFO 12516 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fb8d720, org.springframework.security.web.context.SecurityContextPersistenceFilter@76055d02, org.springframework.security.web.header.HeaderWriterFilter@764d54a0, org.springframework.security.web.csrf.CsrfFilter@455cb6d9, org.springframework.security.web.authentication.logout.LogoutFilter@7d48299e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29682244, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@69542112, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21b792c2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@67748053, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@648bfebe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37a0c3c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6202f8bf, org.springframework.security.web.session.SessionManagementFilter@52a3eba3, org.springframework.security.web.access.ExceptionTranslationFilter@64ff0eaa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c502018]
+2022-01-03 16:13:12.873  INFO 12516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57037 (http) with context path ''
+2022-01-03 16:13:12.889  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 10.566 seconds (JVM running for 12.546)
+2022-01-03 16:13:12.951  INFO 12516 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:13:13.009  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : Starting ItemControllerTest using Java 17.0.1 on LAPTOP-APSUO2AD with PID 12516 (started by Tom in E:\EGOV\SwitchFully\order updated project\eurder-project)
+2022-01-03 16:13:13.010  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : The following profiles are active: test
+2022-01-03 16:13:13.349  INFO 12516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-03 16:13:13.357  INFO 12516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-01-03 16:13:13.406  INFO 12516 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2022-01-03 16:13:13.434  INFO 12516 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [org.descheemaeker.tom.eurderproject.DatabaseConfig$$EnhancerBySpringCGLIB$$af9b9d06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-03 16:13:13.621  INFO 12516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-03 16:13:13.622  INFO 12516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-03 16:13:13.623  INFO 12516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-03 16:13:13.673  INFO 12516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-03 16:13:13.673  INFO 12516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2022-01-03 16:13:13.816  INFO 12516 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:aec3bb98-961b-495f-9099-5b335cddaa22;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-01-03 16:13:13.832  INFO 12516 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2022-01-03 16:13:13.832  INFO 12516 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:aec3bb98-961b-495f-9099-5b335cddaa22 (H2 1.4)
+2022-01-03 16:13:13.845  INFO 12516 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.007s)
+2022-01-03 16:13:13.854  INFO 12516 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-01-03 16:13:13.882  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-01-03 16:13:13.886  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Initial db"
+2022-01-03 16:13:13.911  INFO 12516 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.036s)
+2022-01-03 16:13:13.970  INFO 12516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-03 16:13:13.979  INFO 12516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-03 16:13:14.029  INFO 12516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-03 16:13:14.030  INFO 12516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-03 16:13:14.303  WARN 12516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-03 16:13:15.303  INFO 12516 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 21d27398-5052-40da-b794-530bd756a939
+
+2022-01-03 16:13:15.534 DEBUG 12516 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-01-03 16:13:15.580  INFO 12516 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35bfa7be, org.springframework.security.web.context.SecurityContextPersistenceFilter@68e8bbab, org.springframework.security.web.header.HeaderWriterFilter@3b303b78, org.springframework.security.web.csrf.CsrfFilter@4548bfc7, org.springframework.security.web.authentication.logout.LogoutFilter@5eabcf77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48682f91, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7bd6c35e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@482034fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4dc23273, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfaa2f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@672ba9cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41bd8ec9, org.springframework.security.web.session.SessionManagementFilter@685e97e0, org.springframework.security.web.access.ExceptionTranslationFilter@557c0b65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f1e5f85]
+2022-01-03 16:13:15.678  INFO 12516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57040 (http) with context path ''
+2022-01-03 16:13:15.684  INFO 12516 --- [main] o.d.t.e.api.items.ItemControllerTest     : Started ItemControllerTest in 2.727 seconds (JVM running for 15.342)
+2022-01-03 16:13:19.612  INFO 12516 --- [http-nio-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-03 16:13:19.613  INFO 12516 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-03 16:13:19.615  INFO 12516 --- [http-nio-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-03 16:13:19.644 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /items
+2022-01-03 16:13:19.657 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:13:19.751 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost:57040/items
+2022-01-03 16:13:19.751 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2022-01-03 16:13:19.752 DEBUG 12516 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:13:19.755 DEBUG 12516 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:13:19.755 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:13:19.762 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2022-01-03 16:13:19.762 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2022-01-03 16:13:19.765 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2022-01-03 16:13:19.773 DEBUG 12516 --- [http-nio-auto-2-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2022-01-03 16:13:19.775 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@7e49f3f0, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2022-01-03 16:13:19.780 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3f49cc31, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3f49cc31, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@3f49cc31, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2022-01-03 16:13:19.781 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@2298d741
+2022-01-03 16:13:19.782 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2022-01-03 16:13:19.782 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@612566d8
+2022-01-03 16:13:19.782 DEBUG 12516 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:13:19.783 DEBUG 12516 --- [http-nio-auto-2-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2022-01-03 16:13:19.783 DEBUG 12516 --- [http-nio-auto-2-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2022-01-03 16:13:19.995  INFO 12516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
