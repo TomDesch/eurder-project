@@ -26,7 +26,7 @@ public final class Address {
         this.country = country;
     }
 
-    private Address() {
+    public Address() {
     }
 
     @Override
