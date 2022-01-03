@@ -32,6 +32,7 @@ public class User {
     @Column(name = "PHONE_NUMBER", nullable = false)
     private String phoneNumber;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "USER_TYPE", nullable = false)
     private UserType userType;
 
