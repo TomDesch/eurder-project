@@ -1,5 +1,6 @@
 package org.descheemaeker.tom.eurderproject.services;
 
+import org.descheemaeker.tom.eurderproject.api.users.UserMapper;
 import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.api.users.dto.CreateUserDto;
 import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
@@ -9,16 +10,17 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import static org.descheemaeker.tom.eurderproject.api.users.UserMapper.USER_MAPPER;
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
 @Service
 public class UserService {
     private final UserRepository userRepository;
+    private final UserMapper userMapper;
 
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
+        this.userMapper = userMapper;
         initiateBasicAccounts();
     }
 
@@ -38,11 +40,11 @@ public class UserService {
 
     public UserDto addUser(User user) {
         userRepository.addUser(user);
-        return USER_MAPPER.userToDto(user);
+        return userMapper.userToDto(user);
     }
 
     public UserDto addUser(CreateUserDto createUserDto) {
-        return addUser(USER_MAPPER.dtoToUser(createUserDto));
+        return addUser(userMapper.dtoToUser(createUserDto));
     }
 
     public User getByEmail(String emailAddress) {
