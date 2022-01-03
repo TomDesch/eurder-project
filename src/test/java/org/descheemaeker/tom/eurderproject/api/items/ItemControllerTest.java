@@ -5,14 +5,13 @@ import org.descheemaeker.tom.eurderproject.Utility;
 import org.descheemaeker.tom.eurderproject.api.items.dto.CreateItemDto;
 import org.descheemaeker.tom.eurderproject.api.items.dto.ItemDto;
 import org.descheemaeker.tom.eurderproject.domain.Address;
-import org.descheemaeker.tom.eurderproject.domain.UserType;
 import org.descheemaeker.tom.eurderproject.domain.User;
+import org.descheemaeker.tom.eurderproject.domain.UserType;
 import org.descheemaeker.tom.eurderproject.services.UserService;
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -21,6 +20,7 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
 import static io.restassured.http.ContentType.JSON;
+import static org.descheemaeker.tom.eurderproject.domain.UserType.ADMIN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
@@ -38,17 +38,30 @@ class ItemControllerTest {
     @Autowired
     private UserService userService;
 
+    @BeforeEach
+    void setUp() {
+        User admin = User.UserBuilder.aUser()
+                .withUserType(ADMIN)
+                .withFirstName("non null")
+                .withLastName("non null either")
+                .withEmailAddress("admin")
+                .withPassword("admin")
+                .build();
+
+        userService.addUser(admin);
+    }
 
     @Test
     void givenRepoWithItems_whenRegisteringNewItemAsAdmin_thenDoIt() {
         CreateItemDto itemCreateDto = new CreateItemDto("t123", "t123", 1D, 1);
+
 
         ItemDto itemDto =
                 RestAssured.given()
                         .body(itemCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
-                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
+//                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .when()
                         .port(port)
                         .post("/items")
@@ -79,7 +92,7 @@ class ItemControllerTest {
                 .post("/items")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.BAD_REQUEST.value());
+                .statusCode(HttpStatus.UNAUTHORIZED.value());
     }
 
     @Test
@@ -98,7 +111,7 @@ class ItemControllerTest {
                 .withPhoneNumber(everything)
                 .build());
 
-        String response = RestAssured.given()
+        RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
@@ -108,18 +121,16 @@ class ItemControllerTest {
                 .post("/items")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.UNAUTHORIZED.value())
-                .extract()
-                .path("message");
+                .statusCode(HttpStatus.UNAUTHORIZED.value());
 
-        Assertions.assertEquals(response, everything + " does not have access to this feature.");
+//        Assertions.assertEquals(response, everything + " does not have access to this feature.");
     }
 
     @Test
     void givenRepoWithItems_whenAuthorisingNoEmailExists_thenThrowRuntimeException() {
         CreateItemDto itemCreateDto = new CreateItemDto("t2", "t2", 1D, 1);
 
-        String response = RestAssured.given()
+        RestAssured.given()
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
@@ -128,10 +139,10 @@ class ItemControllerTest {
                 .port(port)
                 .post("/items")
                 .then()
-                .extract()
-                .path("message");
+                .assertThat()
+                .statusCode(HttpStatus.UNAUTHORIZED.value());
 
-        Assertions.assertEquals(response, "This email does not exist in our database.");
+//        Assertions.assertEquals(response, "This email does not exist in our database.");
     }
 
 
@@ -139,19 +150,17 @@ class ItemControllerTest {
     void givenRepoWithItems_whenAuthorisingWrongPassword_thenThrowRuntimeException() {
         CreateItemDto itemCreateDto = new CreateItemDto("tj2", "tj2", 1D, 1);
 
-        String response = RestAssured.given()
+        RestAssured.given()
+                .header("Authorization", Utility.generateBase64Authorization("admin", "incorrectPassword"))
                 .body(itemCreateDto)
                 .accept(JSON)
                 .contentType(JSON)
-                .header("Authorization", Utility.generateBase64Authorization("admin", "incorrectPassword"))
                 .when()
                 .port(port)
                 .post("/items")
                 .then()
-                // todo fix : .contentType(JSON)
-                .extract()
-                .path("message");
-
-        Assertions.assertEquals(response, "There is no account found with this username and password combination.");
+                .assertThat()
+                .statusCode(HttpStatus.UNAUTHORIZED.value());
+//                .body("message", Matchers.is("There is no account found with this username and password combination."));
     }
 }

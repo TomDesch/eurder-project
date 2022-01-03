@@ -6,12 +6,12 @@ import org.descheemaeker.tom.eurderproject.api.users.dto.UserDto;
 import org.descheemaeker.tom.eurderproject.domain.Address;
 import org.descheemaeker.tom.eurderproject.domain.User;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
+import org.descheemaeker.tom.eurderproject.services.UserService;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -20,9 +20,9 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
 import static io.restassured.http.ContentType.JSON;
+import static org.descheemaeker.tom.eurderproject.domain.UserType.ADMIN;
 import static org.descheemaeker.tom.eurderproject.domain.UserType.CUSTOMER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -37,12 +37,23 @@ public class UserControllerTest {
 
     private Address placeWhereEverybodyLives;
 
+    @Autowired
+    private UserService userService;
 
-
-    @BeforeAll
+    @BeforeEach
     void setUp() {
+        User admin = User.UserBuilder.aUser()
+                .withUserType(ADMIN)
+                .withFirstName("non null")
+                .withLastName("non null either")
+                .withEmailAddress("admin")
+                .withPassword("admin")
+                .build();
+
+        userService.addUser(admin);
         placeWhereEverybodyLives = new Address("Drury Lane", "1", "1000", "Far far away");
     }
+
 
     @Test
     void givenRepoWithUsers_whenRegisteringNewCustomer_thenDoIt() {
@@ -50,6 +61,7 @@ public class UserControllerTest {
 
         UserDto userDto =
                 RestAssured.given()
+//                        .header("Authorization", Utility.generateBase64Authorization("admin", "admin"))
                         .body(customerCreateDto)
                         .accept(JSON)
                         .contentType(JSON)
