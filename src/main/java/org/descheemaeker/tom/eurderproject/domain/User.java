@@ -3,20 +3,41 @@ package org.descheemaeker.tom.eurderproject.domain;
 import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
 
+import javax.persistence.*;
 import java.util.Objects;
 import java.util.UUID;
 
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
+@Entity
+@Table(name = "USER")
 public class User {
-    private final String userId;
-    private final String firstName;
-    private final String lastName;
-    private final String emailAddress;
-    private final Address address;
-    private final String phoneNumber;
-    private final UserType userType;
+    @Id
+    @SequenceGenerator(name = "MEMBER_SEQ", sequenceName = "member_seq", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ")
+    private String userId;
+
+    @Column(name = "FIRST_NAME", nullable = false)
+    private String firstName;
+
+    @Column(name = "LAST_NAME", nullable = false)
+    private String lastName;
+
+    @Column(name = "EMAIL", nullable = false)
+    private String emailAddress;
+
+    @Embedded
+    private Address address;
+
+    @Column(name = "PHONE_NUMBER", nullable = false)
+    private String phoneNumber;
+
+    @Column(name = "USER_TYPE", nullable = false)
+    private UserType userType;
+
+    @Column(name = "PASSWORD", nullable = false)
     private String password; //not safe
+
     private static final boolean ADMIN_OVERRIDES = true;
 
     public User(UserBuilder userBuilder) {
@@ -29,6 +50,9 @@ public class User {
         this.phoneNumber = checkRequiredFieldForIllegalNull(userBuilder.phoneNumber, ADMIN_OVERRIDES);
         this.password = checkRequiredFieldForIllegalNull(userBuilder.password, !ADMIN_OVERRIDES);
 
+    }
+
+    public User() {
     }
 
     private <T> T checkRequiredFieldForIllegalNull(T input, boolean adminOverrides) {

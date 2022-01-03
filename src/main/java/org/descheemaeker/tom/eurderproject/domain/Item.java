@@ -4,6 +4,8 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class Item {
+
+
     private String itemId;
     private String name;
     private String description;
