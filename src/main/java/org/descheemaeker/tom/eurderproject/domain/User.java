@@ -4,6 +4,8 @@ import org.descheemaeker.tom.eurderproject.api.users.UserType;
 import org.descheemaeker.tom.eurderproject.exception.RequiredFieldIsNullException;
 
 import javax.persistence.*;
+
+
 import java.util.Objects;
 import java.util.UUID;
 
@@ -13,8 +15,6 @@ import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 @Table(name = "USER")
 public class User {
     @Id
-    @SequenceGenerator(name = "USER_SEQ", sequenceName = "user_seq", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USER_SEQ")
     private String userId;
 
     @Column(name = "FIRST_NAME", nullable = false)
