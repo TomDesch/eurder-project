@@ -1,6 +1,6 @@
-create table user IF NOT EXISTS
+create table if not exists users
 (
-    id            UUID primary key,
+    userId        uuid primary key,
     first_name    varchar(255) not null,
     last_name     varchar(255) not null,
     email         varchar(255),
@@ -12,10 +12,10 @@ create table user IF NOT EXISTS
     user_type     varchar(255),
     country_label varchar(255),
     password      varchar(255)
-);
+    );
 
-create sequence IF NOT EXISTS item_seq start with 1 increment by 1;
-create table item IF NOT EXISTS
+create sequence if not exists item_seq start with 1 increment by 1;
+create table items
 (
     id          integer default nextval('item_seq') primary key,
     name        varchar(255) not null,

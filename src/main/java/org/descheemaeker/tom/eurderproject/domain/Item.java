@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Entity
-@Table(name = "ITEM")
+@Table(name = "ITEMS")
 public class Item {
 
     @Id
@@ -13,16 +13,16 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ITEM_SEQ")
     private String itemId;
 
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "NAME")
     private String name;
 
-    @Column(name = "DESCRIPTION", nullable = false)
+    @Column(name = "DESCRIPTION")
     private String description;
 
-    @Column(name = "PRICE", nullable = false)
+    @Column(name = "PRICE")
     private double price;
 
-    @Column(name = "AMOUNT", nullable = false)
+    @Column(name = "AMOUNT")
     private int amount;
 
     public Item(ItemBuilder itemBuilder) {

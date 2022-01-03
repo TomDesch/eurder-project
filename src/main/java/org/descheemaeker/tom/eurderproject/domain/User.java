@@ -12,31 +12,31 @@ import java.util.UUID;
 import static org.descheemaeker.tom.eurderproject.api.users.UserType.ADMIN;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "USERS")
 public class User {
     @Id
     private String userId;
 
-    @Column(name = "FIRST_NAME", nullable = false)
+    @Column(name = "FIRST_NAME")
     private String firstName;
 
-    @Column(name = "LAST_NAME", nullable = false)
+    @Column(name = "LAST_NAME")
     private String lastName;
 
-    @Column(name = "EMAIL", nullable = false)
+    @Column(name = "EMAIL")
     private String emailAddress;
 
     @Embedded
     private Address address;
 
-    @Column(name = "PHONE_NUMBER", nullable = false)
+    @Column(name = "PHONE_NUMBER")
     private String phoneNumber;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "USER_TYPE", nullable = false)
+    @Column(name = "USER_TYPE")
     private UserType userType;
 
-    @Column(name = "PASSWORD", nullable = false)
+    @Column(name = "PASSWORD")
     private String password; //not safe
 
     private static final boolean ADMIN_OVERRIDES = true;
